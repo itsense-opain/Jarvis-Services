@@ -9,7 +9,7 @@ namespace Jarvis_Services.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize]
+    //ToDo [Authorize]
     public class AccesoController : ControllerBase
     {
         private readonly IAccesoAplicacion accesoAplicacion;
