@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Opain.Jarvis.Aplicacion.Principal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b34faa2cf79d8b4d630348d30398e4c3a9d94528")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97e5fd234b2eaab7d5c3246a2b1b661593b46909")]
 [assembly: System.Reflection.AssemblyProductAttribute("Opain.Jarvis.Aplicacion.Principal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Opain.Jarvis.Aplicacion.Principal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

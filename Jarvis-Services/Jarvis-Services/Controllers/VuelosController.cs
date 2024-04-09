@@ -87,7 +87,7 @@ namespace Jarvis_Services.Controllers
             try
             {
                 operacionVueloOtd.EstadoProceso = "2";
-                operacionVueloOtd.Id_Daily = "0";
+                //operacionVueloOtd.Id_Daily = "0";
                 await operacionVueloAplicacion.InsertarAsync(operacionVueloOtd).ConfigureAwait(false);
                 _logger.LogInformation("Insertó: {@entidad}" + operacionVueloOtd);
                 return Ok();
