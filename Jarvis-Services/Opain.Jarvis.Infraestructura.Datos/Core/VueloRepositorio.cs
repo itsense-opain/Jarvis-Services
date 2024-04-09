@@ -34,23 +34,26 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
         public async Task EliminarAsync(int id)
         {
             var vuelo = await ObtenerAsync(id);
-            contexto.Vuelos.Remove(vuelo);
+            //contexto.Vuelos.Remove(vuelo);
             contexto.SaveChanges();
         }
 
         public async Task<Vuelo> ObtenerAsync(int id)
         {
-            return await contexto.Vuelos.FindAsync(id);
+            return null;
+            //return await contexto.Vuelos.FindAsync(id);
         }
 
         public async Task<Vuelo> ObtenerPorNombreAsync(string nombre)
         {
-            return await contexto.Vuelos.Include(X => X.Aerolinea).Where(x => x.NumeroVuelo.ToUpper() == nombre.ToUpper()).FirstOrDefaultAsync();
+            return null;
+            //return await contexto.Vuelos.Include(X => X.Aerolinea).Where(x => x.NumeroVuelo.ToUpper() == nombre.ToUpper()).FirstOrDefaultAsync();
         }
 
         public async Task<IList<Vuelo>> ObtenerTodosAsync()
         {
-            return await contexto.Vuelos.ToListAsync();
+            return null;
+            //return await contexto.Vuelos.ToListAsync();
         }
 
     }

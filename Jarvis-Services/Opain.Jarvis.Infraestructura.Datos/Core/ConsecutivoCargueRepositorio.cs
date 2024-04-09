@@ -29,9 +29,10 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
 
         public async Task<Cargue> ObtenerAsync(int id)
         {
-            return await _contexto.Cargues
-                .Include(x => x.Id)
-                .FirstOrDefaultAsync(x => x.Id.Equals(id));
+            return null;
+            //return await _contexto.Cargues
+            //    .Include(x => x.Id)
+            //    .FirstOrDefaultAsync(x => x.Id.Equals(id));
         }
     }
 }

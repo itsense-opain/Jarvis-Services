@@ -7,6 +7,9 @@
   <ItemGroup>
     <Compile Remove="Migrations\20190620224206_Migracion001.cs" />
     <Compile Remove="Migrations\20190620224206_Migracion001.Designer.cs" />
+    <Compile Remove="Migrations\20190821133909_Migracion001.cs" />
+    <Compile Remove="Migrations\20190821133909_Migracion001.Designer.cs" />
+    <Compile Remove="Migrations\ContextoOpainModelSnapshot.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +24,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Opain.Jarvis.Dominio.Entidades\Opain.Jarvis.Dominio.Entidades.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

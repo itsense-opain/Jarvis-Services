@@ -62,7 +62,6 @@ C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Deb
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.AssemblyInfoInputs.cache
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.AssemblyInfo.cs
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.csproj.CoreCompileInputs.cache
-C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.MvcApplicationPartsAssemblyInfo.cs
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.MvcApplicationPartsAssemblyInfo.cache
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.sourcelink.json
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.dll
@@ -147,3 +146,4 @@ C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Deb
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-S.BA0F7B6C.Up2Date
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.genruntimeconfig.cache
 C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\ref\Jarvis-Services.dll
+C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.MvcApplicationPartsAssemblyInfo.cs

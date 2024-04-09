@@ -28,7 +28,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
         public async Task EliminarAsync(int id)
         {
             var novedad = await ObtenerAsync(id);
-            _contexto.NovedadesProcesos.Remove(novedad);
+            //_contexto.NovedadesProcesos.Remove(novedad);
             _contexto.SaveChanges();
         }
 
@@ -40,27 +40,30 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
 
         public async Task<NovedadProceso> ObtenerAsync(int id)
         {
-            return await _contexto.NovedadesProcesos
-                .Include(x => x.Causal)
-                .Include(x => x.OperacionesVuelo)
-                .FirstOrDefaultAsync(x => x.Id.Equals(id));
+            return null;
+            //return await _contexto.NovedadesProcesos
+            //    .Include(x => x.Causal)
+            //    .Include(x => x.OperacionesVuelo)
+            //    .FirstOrDefaultAsync(x => x.Id.Equals(id));
         }
 
         public async Task<IList<NovedadProceso>> ObtenerTodosAsync()
         {
-            return await _contexto.NovedadesProcesos
-                .Include(x => x.Causal)
-                .Include(x => x.OperacionesVuelo)
-                .ToListAsync();
+            return null;
+            //return await _contexto.NovedadesProcesos
+            //    .Include(x => x.Causal)
+            //    .Include(x => x.OperacionesVuelo)
+            //    .ToListAsync();
         }
 
         public async Task<IList<NovedadProceso>> ObtenerTodosPorOperacionAsync(int id)
         {
-            return await _contexto.NovedadesProcesos
-                .Include(x => x.Causal)
-                .Include(x => x.OperacionesVuelo)
-                .Where(x => x.IdOperacionVuelo.Equals(id))
-                .ToListAsync();
+            return null;
+            //return await _contexto.NovedadesProcesos
+                //.Include(x => x.Causal)
+                //.Include(x => x.OperacionesVuelo)
+                //.Where(x => x.IdOperacionVuelo.Equals(id))
+                //.ToListAsync();
         }
     }
 }

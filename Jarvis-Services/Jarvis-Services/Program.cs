@@ -21,7 +21,7 @@ try
     var builder = WebApplication.CreateBuilder(args);
 
     var connectionString = builder.Configuration.GetConnectionString("ConexionJarvisBD");
-    builder.Services.AddDbContext<ContextoOpain>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    builder.Services.AddDbContext<ContextoOpain>(options => options.UseSqlServer(connectionString));
 
     //builder.Services.AddIdentity<Usuario, Rol>()
     //            .AddEntityFrameworkStores<ContextoOpain>()

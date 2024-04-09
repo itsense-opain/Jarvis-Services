@@ -32,7 +32,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
         public async Task EliminarAsync(int id)
         {
             var horarioOperacion = await ObtenerAsync(id);
-            _contexto.HorariosOperaciones.Remove(horarioOperacion);
+            //_contexto.HorariosOperaciones.Remove(horarioOperacion);
             _contexto.SaveChanges();
         }
 
@@ -44,12 +44,14 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
 
         public async Task<HorarioOperacion> ObtenerAsync(int id)
         {
-            return await _contexto.HorariosOperaciones.FindAsync(id);
+            return null;
+            //return await _contexto.HorariosOperaciones.FindAsync(id);
         }
 
         public async Task<IList<HorarioOperacion>> ObtenerTodosAsync()
         {
-            return await _contexto.HorariosOperaciones.AsNoTracking().ToListAsync();
+            return null;
+            //return await _contexto.HorariosOperaciones.AsNoTracking().ToListAsync();
         }
     }
 }

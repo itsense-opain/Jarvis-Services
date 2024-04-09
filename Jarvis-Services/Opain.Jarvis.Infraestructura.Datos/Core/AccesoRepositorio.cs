@@ -33,35 +33,35 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
 
             if (aerolinea == "0")
             {
-                 accesosYAerolineas = await (from ac in _contexto.Accesos
-                                                join ae in _contexto.Aerolineas on ac.IdAeroLineas equals ae.Id
-                                                where ac.Fecha <= fin && ac.Fecha >= inicio 
-                                                select new Acceso
-                                                {
-                                                    Fecha = ac.Fecha,
-                                                    Grupo = ac.Grupo,
-                                                    Hora = ac.Hora,
-                                                    Id = ac.Id,
-                                                    IdAeroLineas = ae.Id,
-                                                    NombreUsuario = ac.NombreUsuario,
-                                                    Rol = ac.Rol
-                                                }).ToListAsync();
+                 //accesosYAerolineas = await (from ac in _contexto.Accesos
+                 //                               join ae in _contexto.Aerolineas on ac.IdAeroLineas equals ae.Id
+                 //                               where ac.Fecha <= fin && ac.Fecha >= inicio 
+                 //                               select new Acceso
+                 //                               {
+                 //                                   Fecha = ac.Fecha,
+                 //                                   Grupo = ac.Grupo,
+                 //                                   Hora = ac.Hora,
+                 //                                   Id = ac.Id,
+                 //                                   IdAeroLineas = ae.Id,
+                 //                                   NombreUsuario = ac.NombreUsuario,
+                 //                                   Rol = ac.Rol
+                 //                               }).ToListAsync();
             }
             else 
             { 
-             accesosYAerolineas = await (from ac in _contexto.Accesos
-                                            join ae in _contexto.Aerolineas on ac.IdAeroLineas equals ae.Id
-                                            where ac.Fecha <= fin && ac.Fecha >= inicio && ae.Codigo == aerolinea
-                                            select new Acceso
-                                            {
-                                                Fecha=ac.Fecha,
-                                                Grupo=ac.Grupo,
-                                                Hora=ac.Hora,
-                                                Id = ac.Id,
-                                                IdAeroLineas = ae.Id,
-                                                NombreUsuario=ac.NombreUsuario,
-                                                Rol=ac.Rol
-                                            }).ToListAsync();
+             //accesosYAerolineas = await (from ac in _contexto.Accesos
+             //                               join ae in _contexto.Aerolineas on ac.IdAeroLineas equals ae.Id
+             //                               where ac.Fecha <= fin && ac.Fecha >= inicio && ae.Codigo == aerolinea
+             //                               select new Acceso
+             //                               {
+             //                                   Fecha=ac.Fecha,
+             //                                   Grupo=ac.Grupo,
+             //                                   Hora=ac.Hora,
+             //                                   Id = ac.Id,
+             //                                   IdAeroLineas = ae.Id,
+             //                                   NombreUsuario=ac.NombreUsuario,
+             //                                   Rol=ac.Rol
+             //                               }).ToListAsync();
             }
 
             //IList<Acceso> listadoAcceso;
