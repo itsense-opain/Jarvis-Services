@@ -33,3 +33,4 @@ D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Infraestructura.Dato
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Infraestructura.Datos\obj\Debug\net8.0\Opain.Jarvis.Infraestructura.Datos.pdb
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Infraestructura.Datos\obj\Debug\net8.0\Opain.Jarvis.Infraestructura.Datos.genruntimeconfig.cache
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Infraestructura.Datos\obj\Debug\net8.0\ref\Opain.Jarvis.Infraestructura.Datos.dll
+D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Infraestructura.Datos\obj\Debug\net8.0\Opain.Jarvis.Infraestructura.Datos.sourcelink.json

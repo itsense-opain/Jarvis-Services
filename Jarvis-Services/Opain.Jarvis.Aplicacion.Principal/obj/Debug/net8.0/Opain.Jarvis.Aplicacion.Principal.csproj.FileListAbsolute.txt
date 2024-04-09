@@ -33,3 +33,4 @@ D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal\obj\Debug\net8.0\refint\Opain.Jarvis.Aplicacion.Principal.dll
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal\obj\Debug\net8.0\Opain.Jarvis.Aplicacion.Principal.pdb
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal\obj\Debug\net8.0\ref\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal\obj\Debug\net8.0\Opain.Jarvis.Aplicacion.Principal.sourcelink.json

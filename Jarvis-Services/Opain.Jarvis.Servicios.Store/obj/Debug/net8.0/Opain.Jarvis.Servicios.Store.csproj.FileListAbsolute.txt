@@ -29,3 +29,4 @@ D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Servicios.Store\obj\
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Servicios.Store\obj\Debug\net8.0\refint\Opain.Jarvis.Servicios.Store.dll
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Servicios.Store\obj\Debug\net8.0\Opain.Jarvis.Servicios.Store.pdb
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Servicios.Store\obj\Debug\net8.0\ref\Opain.Jarvis.Servicios.Store.dll
+D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Servicios.Store\obj\Debug\net8.0\Opain.Jarvis.Servicios.Store.sourcelink.json

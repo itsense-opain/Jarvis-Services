@@ -56,3 +56,4 @@ D:\Repo\github\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.pdb
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.genruntimeconfig.cache
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\ref\Jarvis-Services.dll
+D:\Repo\github\Jarvis-Services\Jarvis-Services\Jarvis-Services\obj\Debug\net8.0\Jarvis-Services.sourcelink.json

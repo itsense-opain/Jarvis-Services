@@ -23,3 +23,4 @@ D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Dominio.Entidades\ob
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Dominio.Entidades\obj\Debug\net8.0\refint\Opain.Jarvis.Dominio.Entidades.dll
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Dominio.Entidades\obj\Debug\net8.0\Opain.Jarvis.Dominio.Entidades.pdb
 D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Dominio.Entidades\obj\Debug\net8.0\ref\Opain.Jarvis.Dominio.Entidades.dll
+D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Dominio.Entidades\obj\Debug\net8.0\Opain.Jarvis.Dominio.Entidades.sourcelink.json
