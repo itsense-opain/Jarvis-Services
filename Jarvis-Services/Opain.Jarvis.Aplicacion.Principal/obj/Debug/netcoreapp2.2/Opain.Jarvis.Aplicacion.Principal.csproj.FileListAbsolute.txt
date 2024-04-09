@@ -1,0 +1,111 @@
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.deps.json
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.dll
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.dll
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.dll
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.dll
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.pdb
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.pdb
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.pdb
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.pdb
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.AssemblyReference.cache
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfoInputs.cache
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfo.cs
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CoreCompileInputs.cache
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CopyComplete
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Desarrollo\Opaindesarrollo\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.deps.json
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.dll
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.dll
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.dll
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.dll
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.AssemblyReference.cache
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfoInputs.cache
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfo.cs
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CoreCompileInputs.cache
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CopyComplete
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Desarrollo\GIT\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.sourcelink.json
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.deps.json
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.dll
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.dll
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.dll
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.dll
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.pdb
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.pdb
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.pdb
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.pdb
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.AssemblyReference.cache
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfoInputs.cache
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfo.cs
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CoreCompileInputs.cache
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.sourcelink.json
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CopyComplete
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+C:\Users\dmora\Documents\Jarvis_SharePoint\Codigo\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.deps.json
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.dll
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.dll
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.dll
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.dll
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Interfaces.pdb
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Interfaces.pdb
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.OTD.pdb
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.pdb
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.AssemblyReference.cache
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.GeneratedMSBuildEditorConfig.editorconfig
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfoInputs.cache
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfo.cs
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CoreCompileInputs.cache
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.sourcelink.json
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Ja.FC6EE1F4.Up2Date
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+C:\VERSIONAMIENTO_JARVIS\CSXCO-Opain_18_03_2024\CSXCO-Opain\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.deps.json
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.dll
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Datos.dll
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Datos.pdb
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.pdb
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.AssemblyReference.cache
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfoInputs.cache
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfo.cs
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CoreCompileInputs.cache
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.sourcelink.json
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Ja.FC6EE1F4.Up2Date
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Repo\CSXCO-Opain - Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.deps.json
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.dll
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Datos.dll
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Infraestructura.Datos.pdb
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\bin\Debug\netcoreapp2.2\Opain.Jarvis.Dominio.Entidades.pdb
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.AssemblyReference.cache
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfoInputs.cache
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.AssemblyInfo.cs
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.csproj.CoreCompileInputs.cache
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Ja.FC6EE1F4.Up2Date
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.dll
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.pdb
+D:\Repo\github\Jarvis-Backend\Opain.Jarvis.Aplicacion.Principal\obj\Debug\netcoreapp2.2\Opain.Jarvis.Aplicacion.Principal.sourcelink.json
