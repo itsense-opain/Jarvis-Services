@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Opain.Jarvis.Aplicacion.Principal
-build_property.ProjectDir = D:\Repo\github\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal\
+build_property.ProjectDir = C:\VERSIONAMIENTO_GITHUB\Jarvis-Services\Jarvis-Services\Opain.Jarvis.Aplicacion.Principal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

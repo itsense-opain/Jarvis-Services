@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\function\\perfilmapeos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\function\\perfilmapeos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B838749D-92A1-4677-93C1-A1AF85C5B6B2}|Opain.Jarvis.Aplicacion.Principal\\Opain.Jarvis.Aplicacion.Principal.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.aplicacion.principal\\core\\archivoaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B838749D-92A1-4677-93C1-A1AF85C5B6B2}|Opain.Jarvis.Aplicacion.Principal\\Opain.Jarvis.Aplicacion.Principal.csproj|solutionrelative:opain.jarvis.aplicacion.principal\\core\\archivoaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B838749D-92A1-4677-93C1-A1AF85C5B6B2}|Opain.Jarvis.Aplicacion.Principal\\Opain.Jarvis.Aplicacion.Principal.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.aplicacion.principal\\core\\operacionvueloaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B838749D-92A1-4677-93C1-A1AF85C5B6B2}|Opain.Jarvis.Aplicacion.Principal\\Opain.Jarvis.Aplicacion.Principal.csproj|solutionrelative:opain.jarvis.aplicacion.principal\\core\\operacionvueloaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.infraestructura.datos\\core\\consecutivocarguerepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|solutionrelative:opain.jarvis.infraestructura.datos\\core\\consecutivocarguerepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.infraestructura.datos\\contextoopain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|solutionrelative:opain.jarvis.infraestructura.datos\\contextoopain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\categoriapasajeros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\categoriapasajeros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\cantidadpasajerosoperacionvuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\cantidadpasajerosoperacionvuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PerfilMapeos.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYCAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:27:23.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArchivoAplicacion.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Aplicacion.Principal\\Core\\ArchivoAplicacion.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Aplicacion.Principal\\Core\\ArchivoAplicacion.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Aplicacion.Principal\\Core\\ArchivoAplicacion.cs",
+              "RelativeToolTip": "Opain.Jarvis.Aplicacion.Principal\\Core\\ArchivoAplicacion.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwEIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:19:07.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OperacionVueloAplicacion.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Aplicacion.Principal\\Core\\OperacionVueloAplicacion.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Aplicacion.Principal\\Core\\OperacionVueloAplicacion.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Aplicacion.Principal\\Core\\OperacionVueloAplicacion.cs",
+              "RelativeToolTip": "Opain.Jarvis.Aplicacion.Principal\\Core\\OperacionVueloAplicacion.cs",
+              "ViewState": "AQIAAB4BAAAAAAAAAAAAADoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:13:26.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConsecutivoCargueRepositorio.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Core\\ConsecutivoCargueRepositorio.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Infraestructura.Datos\\Core\\ConsecutivoCargueRepositorio.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Core\\ConsecutivoCargueRepositorio.cs",
+              "RelativeToolTip": "Opain.Jarvis.Infraestructura.Datos\\Core\\ConsecutivoCargueRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwB0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:08:57.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContextoOpain.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
+              "RelativeToolTip": "Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAAKcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:55:35.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CantidadPasajerosOperacionVuelo.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\CantidadPasajerosOperacionVuelo.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\CantidadPasajerosOperacionVuelo.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\CantidadPasajerosOperacionVuelo.cs",
+              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\CantidadPasajerosOperacionVuelo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:32:41.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriaPasajeros.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\CategoriaPasajeros.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\CategoriaPasajeros.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\CategoriaPasajeros.cs",
+              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\CategoriaPasajeros.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:30:25.715Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj": {}
+    "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
+    "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
+        "projectUniqueName": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
         "projectName": "Opain.Jarvis.Dominio.Entidades",
-        "projectPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
+        "projectPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
         "packagesPath": "C:\\Users\\itsense\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\obj\\",
+        "outputPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -77,14 +77,14 @@
         }
       }
     },
-    "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj": {
+    "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj",
+        "projectUniqueName": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj",
         "projectName": "Opain.Jarvis.Servicios.Store",
-        "projectPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj",
+        "projectPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\Opain.Jarvis.Servicios.Store.csproj",
         "packagesPath": "C:\\Users\\itsense\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\obj\\",
+        "outputPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Servicios.Store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
-                "projectPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj"
+              "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
+                "projectPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj"
               }
             }
           }

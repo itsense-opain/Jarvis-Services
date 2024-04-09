@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj": {}
+    "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
+    "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
+        "projectUniqueName": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
         "projectName": "Opain.Jarvis.Dominio.Entidades",
-        "projectPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
+        "projectPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
         "packagesPath": "C:\\Users\\itsense\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\obj\\",
+        "outputPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -77,14 +77,14 @@
         }
       }
     },
-    "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj": {
+    "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj",
+        "projectUniqueName": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj",
         "projectName": "Opain.Jarvis.Infraestructura.Datos",
-        "projectPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj",
+        "projectPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj",
         "packagesPath": "C:\\Users\\itsense\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\obj\\",
+        "outputPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
-                "projectPath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj"
+              "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj": {
+                "projectPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj"
               }
             }
           }
@@ -127,19 +127,21 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[8.0.3, )"
             },
-            "MySql.Data.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.16, )"
+              "version": "[8.0.3, )"
             }
           },
           "imports": [

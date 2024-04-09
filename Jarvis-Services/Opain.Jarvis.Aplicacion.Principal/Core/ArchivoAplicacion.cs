@@ -1,4 +1,4 @@
-﻿
+﻿using AutoMapper;
 using Opain.Jarvis.Aplicacion.Interfaces;
 using Opain.Jarvis.Dominio.Entidades;
 using Opain.Jarvis.Dominio.Entidades.Function;
@@ -38,7 +38,7 @@ namespace Opain.Jarvis.Aplicacion.Principal
 
         public async Task  InsertarMasivoAsync(IList<ArchivoOtd> archivo)
         {
-            IList<Archivo> archivosOdt = new List<Archivo>();
+            IList<RutaArchivos> archivosOdt = new List<RutaArchivos>();
 
             foreach (var item in archivo)
             {
@@ -60,7 +60,7 @@ namespace Opain.Jarvis.Aplicacion.Principal
         public async Task<IList<ArchivoOtd>> ObtenerPorOperacionAsync(int idOperacion)
         {
             IList<ArchivoOtd> archivosOtd = new List<ArchivoOtd>();
-            IList<Archivo> archivos = await archivoRepositorio.ObtenerPorOperacionAsync(idOperacion);
+            IList<RutaArchivos> archivos = await archivoRepositorio.ObtenerPorOperacionAsync(idOperacion);
 
             foreach (var item in archivos)
             {

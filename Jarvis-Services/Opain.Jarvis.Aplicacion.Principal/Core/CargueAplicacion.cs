@@ -25,7 +25,7 @@ namespace Opain.Jarvis.Aplicacion.Principal
         {
             var cargue = mapper.MapCargue(cargueOtd);
             await cargueRepositorio.InsertarAsync(cargue);
-            return  mapper.MapCargueOtd(cargue);
+            return mapper.MapCargueOtd(cargue);
         }
 
         public async Task<IList<CargueOtd>> ObtenerTodosAsync(DateTime inicio, DateTime fin)
@@ -37,7 +37,6 @@ namespace Opain.Jarvis.Aplicacion.Principal
             foreach (var item in cargues)
             {
                 var cargue = mapper.MapCargueOtd(item);
-
                 carguesOtd.Add(cargue);
             }
             return carguesOtd;

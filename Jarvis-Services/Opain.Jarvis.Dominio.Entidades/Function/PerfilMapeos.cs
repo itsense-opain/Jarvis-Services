@@ -18,36 +18,15 @@ namespace Opain.Jarvis.Dominio.Entidades
                 FechaVuelo = objEntrada.Fecha,
                 MatriculaVuelo = objEntrada.Matricula,
                 HoraVuelo = objEntrada.Hora,
-                PAX = objEntrada.PAX,
-                INF = objEntrada.INF,
-                TTL = objEntrada.TTL,
-                TTC = objEntrada.TTC,
-                EX = objEntrada.EX,
-                TRIP = objEntrada.TRIP,
                 TotalEmbarcados = objEntrada.TotalEmbarcados,
                 PagoCOP = objEntrada.PagoCOP,
-                PagoUSD = objEntrada.PagoUSD,
-                ConfirmacionPasajeros = objEntrada.ConfirmacionPasajeros,
-                ConfirmacionTransitos = objEntrada.ConfirmacionTransitos,
-                ConfirmacionGenDec = objEntrada.ConfirmacionGenDec,
-                CanfirmacionManifiesto = objEntrada.ConfirmacionManifiesto,
-                ConfirmacionOperacion = objEntrada.ConfirmacionOperacion,
-                IdVuelo = objEntrada.IdVuelo,
+                PagoUSD = objEntrada.PagoUSD,                
                 IdAerolinea = objEntrada.IdAerolinea,
                 TipoVuelo = objEntrada.Tipo,
                 NumeroVuelo = objEntrada.Vuelo,
                 Destino = objEntrada.Destino,
-                IdCargue = objEntrada.IdConsecutivoCargue,
-                tasasReportadas = objEntrada.tasasReportadas,
-                PAX_LIQ = objEntrada.PAX_LIQ,
-                INF_LIQ = objEntrada.INF_LIQ,
-                TTL_LIQ = objEntrada.TTL_LIQ,
-                TTC_LIQ = objEntrada.TTC_LIQ,
-                EX_LIQ = objEntrada.EX_LIQ,
-                TRIP_LIQ = objEntrada.TRIP_LIQ,
                 TotalEmbarcados_LIQ = objEntrada.TotalEmbarcados_LIQ,
-                PAGOCOP_LIQ = objEntrada.PAGOCOP_LIQ,
-                PAGOUSD_LIQ = objEntrada.PAGOUSD_LIQ
+                TotalEmbarcadosAdd = objEntrada.TotalEmbarcadosAdd,
             };
 
             return objSalida;
@@ -60,36 +39,11 @@ namespace Opain.Jarvis.Dominio.Entidades
                 Fecha = objEntrada.FechaCreacion,
                 Matricula = objEntrada.MatriculaVuelo,
                 Hora = objEntrada.HoraVuelo,
-                PAX = objEntrada.PAX,
-                INF = objEntrada.INF,
-                TTL = objEntrada.TTL,
-                TTC = objEntrada.TTC,
-                EX = objEntrada.EX,
-                TRIP = objEntrada.TRIP,
                 TotalEmbarcados = objEntrada.TotalEmbarcados,
                 PagoCOP = objEntrada.PagoCOP,
                 PagoUSD = objEntrada.PagoUSD,
-                ConfirmacionPasajeros = objEntrada.ConfirmacionPasajeros,
-                ConfirmacionTransitos = objEntrada.ConfirmacionTransitos,
-                ConfirmacionGenDec = objEntrada.ConfirmacionGenDec,
-                ConfirmacionManifiesto = objEntrada.CanfirmacionManifiesto,
-                ConfirmacionOperacion = objEntrada.ConfirmacionOperacion,
-                IdVuelo = objEntrada.IdVuelo,
-                IdAerolinea = objEntrada.IdAerolinea,
-                Tipo = objEntrada.TipoVuelo,
-                Vuelo = objEntrada.NumeroVuelo,
-                Destino = objEntrada.Destino,
-                IdConsecutivoCargue = objEntrada.IdCargue,
-                tasasReportadas = objEntrada.tasasReportadas,
-                PAX_LIQ = objEntrada.PAX_LIQ,
-                INF_LIQ = objEntrada.INF_LIQ,
-                TTL_LIQ = objEntrada.TTL_LIQ,
-                TTC_LIQ = objEntrada.TTC_LIQ,
-                EX_LIQ = objEntrada.EX_LIQ,
-                TRIP_LIQ = objEntrada.TRIP_LIQ,
                 TotalEmbarcados_LIQ = objEntrada.TotalEmbarcados_LIQ,
-                PAGOCOP_LIQ = objEntrada.PAGOCOP_LIQ,
-                PAGOUSD_LIQ = objEntrada.PAGOUSD_LIQ
+                TotalEmbarcadosAdd = objEntrada.TotalEmbarcadosAdd,
             };
 
             return objSalida;
@@ -104,8 +58,8 @@ namespace Opain.Jarvis.Dominio.Entidades
                 FechaVuelo = objEntrada.Fecha,
                 NumeroVuelo = objEntrada.NumeroVuelo,
                 MatriculaVuelo = objEntrada.MatriculaVuelo,
-                realiza_viaje = objEntrada.realiza_viaje,
-                motivo_exencion = objEntrada.motivo_exencion,
+                Realiza_viaje = objEntrada.realiza_viaje,
+                Motivo_exencion = objEntrada.motivo_exencion,
                 IdCargue = objEntrada.IdCargue,
                 NombrePasajero = objEntrada.NombrePasajero
             };
@@ -125,8 +79,8 @@ namespace Opain.Jarvis.Dominio.Entidades
                 MatriculaVuelo = objEntrada.MatriculaVuelo,
                 NombreAerolinea = objEntrada.OperacionesVuelo.Aerolinea.Nombre,
                 TipoVuelo = objEntrada.OperacionesVuelo.TipoVuelo,
-                realiza_viaje = objEntrada.realiza_viaje,
-                motivo_exencion = objEntrada.motivo_exencion,
+                realiza_viaje = objEntrada.Realiza_viaje,
+                motivo_exencion = objEntrada.Motivo_exencion,
                 IdCargue = objEntrada.IdCargue,
                 NumeroVuelo = objEntrada.NumeroVuelo
             };
@@ -191,26 +145,26 @@ namespace Opain.Jarvis.Dominio.Entidades
             return objSalida;
         }
 
-        public Archivo MapArchivo(ArchivoOtd objEntrada)
+        public RutaArchivos MapArchivo(ArchivoOtd objEntrada)
         {
-            var objSalidaOtd = new Archivo()
+            var objSalidaOtd = new RutaArchivos()
             {
                 Id = objEntrada.Id,
-                Nombre = objEntrada.Nombre,
-                Tipo = objEntrada.Tipo,
-                IdOperacionVuelo = objEntrada.Operacion
+                NombreArchivo = objEntrada.Nombre,
+                TipoArchivo = objEntrada.Tipo,
+                OperacionesVuelosId = objEntrada.Operacion
             };
 
             return objSalidaOtd;
         }
-        public ArchivoOtd MapArchivoOtd(Archivo objEntrada)
+        public ArchivoOtd MapArchivoOtd(RutaArchivos objEntrada)
         {
             var objSalidaOtd = new ArchivoOtd()
             {
                 Id = objEntrada.Id,
-                Nombre = objEntrada.Nombre,
-                Tipo = objEntrada.Tipo,
-                Operacion = objEntrada.IdOperacionVuelo
+                Nombre = objEntrada.NombreArchivo,
+                Tipo = objEntrada.TipoArchivo,
+                Operacion = objEntrada.OperacionesVuelosId
             };
 
             return objSalidaOtd;
@@ -556,32 +510,28 @@ namespace Opain.Jarvis.Dominio.Entidades
             return respuestaTicket;
         }
 
-        public CargueArchivo MapCargue(CargueOtd objEntrada)
+        public RutaArchivos MapCargue(CargueOtd objEntrada)
         {
-            var respuestaTicket = new CargueArchivo
+            var respuestaTicket = new RutaArchivos
             {
                 Id = objEntrada.Id,
-                Aerolinea = objEntrada.Aerolinea,
                 TipoArchivo = objEntrada.TipoArchivo,
-                Fecha = objEntrada.Fecha,
-                Usuario = objEntrada.Usuario,
+                FechaCreacion = objEntrada.Fecha,
                 NombreArchivo = objEntrada.NombreArchivo
             };
 
             return respuestaTicket;
         }
 
-        public CargueOtd MapCargueOtd(CargueArchivo objEntrada)
+        public CargueOtd MapCargueOtd(RutaArchivos objEntrada)
         {
             var respuestaTicket = new CargueOtd
             {
                 Id = objEntrada.Id,
-                Aerolinea = objEntrada.Aerolinea,
                 TipoArchivo = objEntrada.TipoArchivo,
-                Fecha = objEntrada.Fecha,
-                Usuario = objEntrada.Usuario,
+                Fecha = objEntrada.FechaCreacion,
+                Usuario = objEntrada.IdUsuario,
                 NombreArchivo = objEntrada.NombreArchivo,
-                NombreCompletoUsuario = objEntrada.Usuario
             };
 
             return respuestaTicket;

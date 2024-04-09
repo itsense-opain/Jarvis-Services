@@ -565,7 +565,6 @@ namespace Opain.Jarvis.Servicios.Store
             this.Ejecutor.AgregarCampoIn("_ErroresAutomaticos", 0);
             if (contingencia.Equals("SI"))
             {
-                this.Ejecutor.AgregarCampoIn("_Id_Daily", operacionVuelo.Id_Daily);
                 this.Ejecutor.AgregarCampoIn("_EstadoProceso", operacionVuelo.EstadoProceso);
                 this.Ejecutor.AgregarCampoIn("_bandera", "SI");
             }

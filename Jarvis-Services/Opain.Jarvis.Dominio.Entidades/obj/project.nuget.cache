@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jM0IXIhA1IYRj8A2zj0/EW3f593a8wM/DCT/tm9lNq/+naLDry5W7hxdsndPlZdUYvuFIAS7nAsLFonQ1Drqww==",
+  "dgSpecHash": "2vK8r2fHCmBX2vZUOH7OXX+HtPE8vWSBWhhBBrR7ggzM4KX0HJVuU+aUbqulmb9XVkBo53wUegeoOQQtZmRMkA==",
   "success": true,
-  "projectFilePath": "D:\\Repo\\github\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
+  "projectFilePath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\itsense\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\itsense\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",

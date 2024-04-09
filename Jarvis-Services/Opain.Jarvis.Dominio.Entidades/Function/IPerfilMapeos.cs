@@ -16,9 +16,9 @@ namespace Opain.Jarvis.Dominio.Entidades.Function
         PasajeroOtd MapPasajeroOtd(Pasajero objEntrada);
         PasajeroTransito MapPasajeroTransito(PasajeroTransitoOtd objEntrada);
         PasajeroTransitoOtd MapPasajeroTransitoOtd(PasajeroTransito objEntrada);
-        Archivo MapArchivo(ArchivoOtd objEntrada);
+        RutaArchivos MapArchivo(ArchivoOtd objEntrada);
 
-        ArchivoOtd MapArchivoOtd(Archivo objEntrada);
+        ArchivoOtd MapArchivoOtd(RutaArchivos objEntrada);
         UsuarioOtd MapUsuarioOtd(Usuario objEntrada);
         UsuariosAerolineasOtd MapUsuariosAerolineasOtd(UsuariosAerolineas objEntrada);
         HorarioAerolinea MapHorarioAerolinea(HorarioAerolineaOtd objEntrada);
@@ -42,13 +42,13 @@ namespace Opain.Jarvis.Dominio.Entidades.Function
         PoliticasDeTratamientoDeDatos MapPoliticasDeTratamientoDeDatos(PoliticasDeTratamientoDeDatosOtd objEntrada);
         PoliticasDeTratamientoDeDatosOtd MapPoliticasDeTratamientoDeDatosOtd(PoliticasDeTratamientoDeDatos objEntrada);
         Cargue MapCargueConsecutivo(ConsecutivoCargueOtd objEntrada);
-        CargueArchivo MapCargue(CargueOtd objEntrada);
-        CargueOtd MapCargueOtd(CargueArchivo objEntrada);
         Causal MapCausal(CausalOtd objEntrada);
         CausalOtd MapCausalOtd(Causal objEntrada);
         NovedadProceso MapNovedadProceso(NovedadOtd objEntrada);
         NovedadOtd MapNovedadOtd(NovedadProceso objEntrada);
         ConsecutivoCargueOtd MapConsecutivoCargueOtd(ConsecutivoCargueOtd objEntrada);
         ConsecutivoCargueOtd MapCargue(Cargue objEntrada);
+        RutaArchivos MapCargue(CargueOtd cargueOtd);
+        CargueOtd MapCargueOtd(RutaArchivos cargue);
     }
 }
