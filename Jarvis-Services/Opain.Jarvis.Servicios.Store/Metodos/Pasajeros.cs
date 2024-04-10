@@ -68,7 +68,7 @@ namespace Opain.Jarvis.Servicios.Store.Metodos
                     Otd.FechaHoraFirma = Comun.Funciones.TryParse(oR["FechaHoraFirma"].ToString());
                     Otd.FechaLlegada = Comun.Funciones.TryParse(oR["FechaLlegada"].ToString());
                     Otd.FechaSalida = Comun.Funciones.TryParse(oR["FechaSalida"].ToString());
-                    Otd.Firmado = oR["Firmado"].ToString() == "" ? 0 : int.Parse(oR["Firmado"].ToString());
+                    Otd.Firmado = oR["Firmado"].ToString() == "False" ? false : true;
                     Otd.HoraLlegada = oR["HoraLlegada"].ToString() == "" ? "00:00" : oR["HoraLlegada"].ToString();
                     Otd.HoraSalida = oR["HoraSalida"].ToString() == "" ? "00:00" : oR["HoraSalida"].ToString();
                     Otd.Id = oR["Id"].ToString() == "" ? 0 : int.Parse(oR["Id"].ToString());

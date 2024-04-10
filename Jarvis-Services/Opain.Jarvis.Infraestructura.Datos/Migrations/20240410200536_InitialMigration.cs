@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -126,35 +126,36 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Usuario",
+                name: "Usuarios",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Cargo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TipoDocumento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NumeroDocumento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Activo = table.Column<int>(type: "int", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EmailConfirmed = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
+                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumberConfirmed = table.Column<int>(type: "int", nullable: false),
-                    TwoFactorEnabled = table.Column<int>(type: "int", nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    LockoutEnabled = table.Column<int>(type: "int", nullable: false),
-                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
+                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    LockoutEnd = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    AccessFailedCount = table.Column<bool>(type: "bit", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Cargo = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Telefono = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    TipoDocumento = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: true),
+                    NumeroDocumento = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Activo = table.Column<bool>(type: "bit", nullable: false),
+                    Clave = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Usuario", x => x.Id);
+                    table.PrimaryKey("PK_Usuarios", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -236,15 +237,15 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Posicion = table.Column<int>(type: "int", nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaActualizacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CategoriaPasajeros", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CategoriaPasajeros_Usuario_IdUsuario",
+                        name: "FK_CategoriaPasajeros_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -253,7 +254,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "RolesUsuarios",
                 columns: table => new
                 {
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false),
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IdRol = table.Column<string>(type: "nvarchar(150)", nullable: false)
                 },
                 constraints: table =>
@@ -266,9 +267,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RolesUsuarios_Usuario_IdUsuario",
+                        name: "FK_RolesUsuarios_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -280,7 +281,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdAerolinea = table.Column<int>(type: "int", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: true)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -292,9 +293,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_UsuariosAerolineas_Usuario_IdUsuario",
+                        name: "FK_UsuariosAerolineas_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id");
                 });
 
@@ -307,23 +308,17 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Codigo = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     Descripcion = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     Tipo = table.Column<int>(type: "int", nullable: false),
-                    Estado = table.Column<int>(type: "int", nullable: false)
+                    Estado = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Causales", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Causales_U_Item_Estado",
-                        column: x => x.Estado,
-                        principalTable: "U_Item",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Causales_U_Item_Tipo",
                         column: x => x.Tipo,
                         principalTable: "U_Item",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -382,10 +377,10 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Mensaje = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Adjunto = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true),
-                    Estado = table.Column<int>(type: "int", nullable: false),
+                    Estado = table.Column<bool>(type: "bit", nullable: false),
                     IdAerolinea = table.Column<int>(type: "int", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false),
-                    Seguimiento = table.Column<int>(type: "int", nullable: false)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Seguimiento = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -397,21 +392,15 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Tickets_U_Item_Estado",
-                        column: x => x.Estado,
-                        principalTable: "U_Item",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Tickets_U_Item_TipoConsulta",
                         column: x => x.TipoConsulta,
                         principalTable: "U_Item",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Tickets_Usuario_IdUsuario",
+                        name: "FK_Tickets_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -427,7 +416,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Cantidad = table.Column<int>(type: "int", nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaActualizacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -445,9 +434,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CantidadPasajerosOperacionVuelo_Usuario_IdUsuario",
+                        name: "FK_CantidadPasajerosOperacionVuelo_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.NoAction);
                 });
@@ -464,8 +453,8 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Fecha = table.Column<DateTime>(type: "date", nullable: false),
                     Valores = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     ValoresNuevos = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
-                    TipoValidacion = table.Column<int>(type: "int", nullable: false),
-                    TipoValidacion2 = table.Column<int>(type: "int", nullable: false)
+                    TipoValidacion = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "0"),
+                    TipoValidacion2 = table.Column<bool>(type: "bit", nullable: false, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -487,7 +476,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     IdOperacionVuelo = table.Column<int>(type: "int", nullable: false),
                     Observacion = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     Estado = table.Column<int>(type: "int", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false),
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -506,9 +495,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
-                        name: "FK_OperacionVueloSeguimiento_Usuario_IdUsuario",
+                        name: "FK_OperacionVueloSeguimiento_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -524,7 +513,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     TipoArchivo = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaActualizacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -536,9 +525,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RutaArchivos_Usuario_IdUsuario",
+                        name: "FK_RutaArchivos_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -553,7 +542,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Mensaje = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Adjunto = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(150)", nullable: false)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -565,9 +554,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RespuestasTickets_Usuario_IdUsuario",
+                        name: "FK_RespuestasTickets_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
-                        principalTable: "Usuario",
+                        principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.NoAction);
                 });
@@ -621,7 +610,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     FechaSalida = table.Column<DateTime>(type: "date", nullable: false),
                     HoraSalida = table.Column<string>(type: "nvarchar(6)", maxLength: 6, nullable: false),
                     FechaHoraCargue = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Firmado = table.Column<int>(type: "int", nullable: false),
+                    Firmado = table.Column<bool>(type: "bit", nullable: false),
                     FechaHoraFirma = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NumeroVueloSalida = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     Destino = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
@@ -669,11 +658,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "IX_CategoriaPasajeros_IdUsuario",
                 table: "CategoriaPasajeros",
                 column: "IdUsuario");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Causales_Estado",
-                table: "Causales",
-                column: "Estado");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Causales_Tipo",
@@ -759,11 +743,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "IX_RutaArchivos_IdUsuario",
                 table: "RutaArchivos",
                 column: "IdUsuario");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tickets_Estado",
-                table: "Tickets",
-                column: "Estado");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tickets_IdAerolinea",
@@ -865,7 +844,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "OperacionesVuelos");
 
             migrationBuilder.DropTable(
-                name: "Usuario");
+                name: "Usuarios");
 
             migrationBuilder.DropTable(
                 name: "Aerolineas");

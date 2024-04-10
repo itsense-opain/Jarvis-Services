@@ -37,7 +37,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(6)]
         public string HoraSalida { get; set; }
         public DateTime FechaHoraCargue { get; set; }
-        public int Firmado { get; set; }
+        public bool Firmado { get; set; }
         public DateTime FechaHoraFirma { get; set; }
         [Required]
         [MaxLength(15)]
@@ -60,7 +60,6 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(100)]
         public string Observaciones { get; set; }
         public bool TasaCobrada { get; set; }
-        [Required]
         [ForeignKey("RutaArchivos")]
         public int IdCargue { get; set; }
         public RutaArchivos RutaArchivos { get; set; }       

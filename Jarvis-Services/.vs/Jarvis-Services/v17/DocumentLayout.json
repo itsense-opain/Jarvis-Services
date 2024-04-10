@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.infraestructura.datos\\migrations\\20240409223042_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|solutionrelative:opain.jarvis.infraestructura.datos\\migrations\\20240409223042_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240410200536_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240410200536_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\otd\\usuariootd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\otd\\usuariootd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\function\\perfilmapeos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\function\\perfilmapeos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.infraestructura.datos\\contextoopain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C831FEC0-1966-4CAF-8657-52360FBC2797}|Opain.Jarvis.Infraestructura.Datos\\Opain.Jarvis.Infraestructura.Datos.csproj|solutionrelative:opain.jarvis.infraestructura.datos\\contextoopain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\pasajerotransito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\pasajerotransito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\rolesusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\rolesusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|c:\\versionamiento_github\\jarvis-services\\jarvis-services\\opain.jarvis.dominio.entidades\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84F36767-9602-4AAE-BE7F-A7C01C6CDC0A}|Opain.Jarvis.Dominio.Entidades\\Opain.Jarvis.Dominio.Entidades.csproj|solutionrelative:opain.jarvis.dominio.entidades\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,75 +35,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240409223042_InitialCreate.cs",
-              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240409223042_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240409223042_InitialCreate.cs",
-              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240409223042_InitialCreate.cs",
-              "RelativeToolTip": "Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240409223042_InitialCreate.cs",
-              "ViewState": "AQIAAHQCAAAAAAAAAAAlwIkCAAA8AAAA",
+              "Title": "20240410200536_InitialMigration.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240410200536_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240410200536_InitialMigration.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240410200536_InitialMigration.cs",
+              "RelativeToolTip": "Opain.Jarvis.Infraestructura.Datos\\Migrations\\20240410200536_InitialMigration.cs",
+              "ViewState": "AQIAAGkCAAAAAAAAAAAlwH4CAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:30:42.908Z",
+              "WhenOpened": "2024-04-10T20:05:36.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerfilMapeos.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\Function\\PerfilMapeos.cs",
+              "ViewState": "AQIAAJQBAAAAAAAAAAAawKQBAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T20:01:59.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioOtd.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\OTD\\UsuarioOtd.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\OTD\\UsuarioOtd.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\OTD\\UsuarioOtd.cs",
+              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\OTD\\UsuarioOtd.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAIA2wBQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T19:29:08.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Ticket.cs",
-              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\Ticket.cs",
-              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Ticket.cs",
-              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\Ticket.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAwA0AAAATAAAA",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\Usuario.cs",
+              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Usuario.cs",
+              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\Usuario.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAArwC4AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:07:00.945Z"
+              "WhenOpened": "2024-04-10T19:28:08.339Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RolesUsuarios.cs",
-              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\RolesUsuarios.cs",
-              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\RolesUsuarios.cs",
-              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\RolesUsuarios.cs",
-              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\RolesUsuarios.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T22:04:11.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ciudad.cs",
-              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Ciudad.cs",
-              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\Ciudad.cs",
-              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\Ciudad.cs",
-              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\Ciudad.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T21:54:36.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PasajeroTransito.cs",
-              "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\PasajeroTransito.cs",
-              "RelativeDocumentMoniker": "Opain.Jarvis.Dominio.Entidades\\PasajeroTransito.cs",
-              "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Dominio.Entidades\\PasajeroTransito.cs",
-              "RelativeToolTip": "Opain.Jarvis.Dominio.Entidades\\PasajeroTransito.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAxwCQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T21:23:19.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ContextoOpain.cs",
               "DocumentMoniker": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
               "RelativeDocumentMoniker": "Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
               "ToolTip": "C:\\VERSIONAMIENTO_GITHUB\\Jarvis-Services\\Jarvis-Services\\Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
               "RelativeToolTip": "Opain.Jarvis.Infraestructura.Datos\\ContextoOpain.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowHoAAAA8AAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAlwD4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T15:55:35.831Z"
+              "WhenOpened": "2024-04-09T15:55:35.831Z",
+              "EditorCaption": ""
             }
           ]
         }

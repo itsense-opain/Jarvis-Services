@@ -65,14 +65,14 @@ namespace Opain.Jarvis.Infraestructura.Datos
                 //    .HasForeignKey(ur => ur.UserId)
                 //    .IsRequired();
 
-                b.ToTable("Usuario");
+                //b.ToTable("Usuario");
 
-                b.Property(e => e.Id).HasMaxLength(150);
-                b.Property(e => e.EmailConfirmed).HasColumnType("int");
-                b.Property(e => e.PhoneNumberConfirmed).HasColumnType("int");
-                b.Property(e => e.TwoFactorEnabled).HasColumnType("int");
-                b.Property(e => e.LockoutEnabled).HasColumnType("int");
-                b.Property(e => e.Activo).HasConversion<int>();
+                //b.Property(e => e.Id).HasMaxLength(150);
+                //b.Property(e => e.EmailConfirmed).HasColumnType("int");
+                //b.Property(e => e.PhoneNumberConfirmed).HasColumnType("int");
+                //b.Property(e => e.TwoFactorEnabled).HasColumnType("int");
+                //b.Property(e => e.LockoutEnabled).HasColumnType("int");
+                //b.Property(e => e.Activo).HasConversion<int>();
             });
 
             builder.Entity<Rol>(b =>
@@ -132,6 +132,8 @@ namespace Opain.Jarvis.Infraestructura.Datos
             builder.Entity<OperacionesVueloErrores>(b =>
             {
                 b.Property(e => e.Fecha).HasColumnType("date");
+                b.Property(e => e.TipoValidacion).HasDefaultValueSql("0");
+                b.Property(e => e.TipoValidacion2).HasDefaultValueSql("0");
             });
 
             builder.Entity<Pasajero>(b =>

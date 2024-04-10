@@ -55,7 +55,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
 
         public async Task<IList<Causal>> ObtenerPorTipoAsync(int tipo)
         {
-            return await _contexto.Causales.Where(x => x.Estado == 1).ToListAsync();
+            return await _contexto.Causales.Where(x => x.Estado == true).ToListAsync();
         }
     }
 }

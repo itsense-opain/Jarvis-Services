@@ -29,7 +29,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string Adjunto { get; set; }
 
         [Required]
-        public int Estado { get; set; }
+        public bool Estado { get; set; }
                 
         public string NombreAerolinea { get; set; }
 
@@ -41,7 +41,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string IdUsuario { get; set; }
 
         [Required]
-        public int Seguimiento { get; set; }
+        public bool Seguimiento { get; set; }
 
         public ICollection<RespuestaTicketOtd> Respuestas { get; set; }
     }

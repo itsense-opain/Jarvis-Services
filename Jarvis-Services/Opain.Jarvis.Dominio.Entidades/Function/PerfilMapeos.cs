@@ -176,19 +176,19 @@ namespace Opain.Jarvis.Dominio.Entidades
             var usuarioOtd = new UsuarioOtd
             {
                 //UsuarioAerolinea = objEntrada.UsuariosAerolineas, ToDo
-                TwoFactorEnabled = objEntrada.TwoFactorEnabled == true ? 1 : 0,
+                TwoFactorEnabled = objEntrada.TwoFactorEnabled,
                 UserName = objEntrada.UserName,
                 SecurityStamp = objEntrada.SecurityStamp,
-                PhoneNumberConfirmed = objEntrada.PhoneNumberConfirmed == true ? 1 : 0,
+                PhoneNumberConfirmed = objEntrada.PhoneNumberConfirmed,
                 PhoneNumber = objEntrada.PhoneNumber,
                 PasswordHash = objEntrada.PasswordHash,
                 NormalizedUserName = objEntrada.NormalizedUserName,
                 NormalizedEmail = objEntrada.NormalizedEmail,
                 Nombre = objEntrada.Nombre,
-                LockoutEnd = objEntrada.LockoutEnd == null ? "" : objEntrada.LockoutEnd.ToString(),
-                LockoutEnabled = objEntrada.LockoutEnabled.ToString(),
+                LockoutEnd = objEntrada.LockoutEnd,
+                LockoutEnabled = objEntrada.LockoutEnabled,
                 Id = objEntrada.Id,
-                EmailConfirmed = objEntrada.EmailConfirmed == true ? 1 : 0,
+                EmailConfirmed = objEntrada.EmailConfirmed == true,
                 Email = objEntrada.Email,
                 ConcurrencyStamp = objEntrada.ConcurrencyStamp,
                 Apellido = objEntrada.Apellido,
@@ -197,7 +197,7 @@ namespace Opain.Jarvis.Dominio.Entidades
                 Activo = objEntrada.Activo,
                 TipoDocumento = objEntrada.TipoDocumento,
                 NumeroDocumento = objEntrada.NumeroDocumento,
-                AccessFailedCount = objEntrada.AccessFailedCount.ToString(),
+                AccessFailedCount = objEntrada.AccessFailedCount,
                 //ToDo
                 //RolesUsuario = objEntrada.RolesUsuarios,
                 Aerolinea = objEntrada.UsuariosAerolineas.FirstOrDefault()?.Aerolinea?.Nombre,

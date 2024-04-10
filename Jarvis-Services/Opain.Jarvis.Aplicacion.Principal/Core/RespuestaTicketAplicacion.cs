@@ -40,9 +40,9 @@ namespace Opain.Jarvis.Aplicacion.Principal
 
             var ticket = await ticketRepositorio.ObtenerAsync(rticket.IdTicket);
 
-            if(ticket.Seguimiento == 1)
+            if(ticket.Seguimiento)
             {
-                ticket.Seguimiento = 0;
+                ticket.Seguimiento = false;
                 await ticketRepositorio.ActualizarAsync(ticket);
             }            
         }

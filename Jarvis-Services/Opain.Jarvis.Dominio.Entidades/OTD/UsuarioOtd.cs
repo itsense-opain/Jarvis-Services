@@ -1,49 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
-
 namespace Opain.Jarvis.Dominio.Entidades
 {
     public class UsuarioOtd
     {
+        [Key]
         public string Id { get; set; }
+        [MaxLength(256)]
         public string UserName { get; set; }
+        [MaxLength(256)]
         public string NormalizedUserName { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [MaxLength(256)]
+        [Required]
         [DataType(DataType.EmailAddress, ErrorMessage = "No cumple caracteristicas de correo electronico.")]
         public string Email { get; set; }
+        [MaxLength(256)]
         public string NormalizedEmail { get; set; }
-        public int EmailConfirmed { get; set; }
+        [Required]
+        public bool EmailConfirmed { get; set; }
         public string PasswordHash { get; set; }
         public string SecurityStamp { get; set; }
         public string ConcurrencyStamp { get; set; }
         public string PhoneNumber { get; set; }
-        public int PhoneNumberConfirmed { get; set; }
-        public int TwoFactorEnabled { get; set; }
-        public string LockoutEnd { get; set; }
-        public string LockoutEnabled { get; set; }
-        public string AccessFailedCount { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        public bool PhoneNumberConfirmed { get; set; }
+        public bool TwoFactorEnabled { get; set; }
+        public DateTime LockoutEnd { get; set; }
+        [Required]
+        public bool LockoutEnabled { get; set; }
+        [Required]
+        public bool AccessFailedCount { get; set; }
+        [Required]
         [Display(Name = "Nombre")]
         public string Nombre { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [Required]
         [Display(Name = "Apellido")]
         public string Apellido { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [Required]
         [Display(Name = "Cargo")]
         public string Cargo { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [Required]
         [Display(Name = "Telefono")]
         [Phone]
         public string Telefono { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [Required]
         [Display(Name = "Tipo de Documento")]
         public string TipoDocumento { get; set; }
         [Display(Name = "Documento de Identidad")]
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [Required]
         public string NumeroDocumento { get; set; }
-        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        [Required]
         [Display(Name = "Perfil")]
         public string Perfil { get; set; }
         public string Aerolinea { get; set; }

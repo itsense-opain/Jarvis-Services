@@ -26,7 +26,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string Valores { get; set; }
         [MaxLength(10)]
         public string ValoresNuevos { get; set; }
-        public int TipoValidacion { get; set; }
-        public int TipoValidacion2 { get; set; }
+        public bool TipoValidacion { get; set; }
+        public bool TipoValidacion2 { get; set; }
     }
 }

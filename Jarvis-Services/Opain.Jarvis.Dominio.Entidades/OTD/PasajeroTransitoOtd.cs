@@ -55,7 +55,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public DateTime FechaHoraFirma { get; set; }
 
         [Display(Name = "Firmado")]
-        public int Firmado { get; set; }
+        public bool Firmado { get; set; }
 
         [Display(Name = "Aerolínea de Salida")]
         public string AerolineaSalida { get; set; }

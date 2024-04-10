@@ -109,7 +109,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("IdVuelo")
                         .HasColumnType("int");
@@ -151,7 +151,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -186,15 +186,13 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("Estado")
-                        .HasColumnType("int");
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
 
                     b.Property<int>("Tipo")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Estado");
 
                     b.HasIndex("Tipo");
 
@@ -345,11 +343,15 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(45)
                         .HasColumnType("nvarchar(45)");
 
-                    b.Property<int>("TipoValidacion")
-                        .HasColumnType("int");
+                    b.Property<bool>("TipoValidacion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("0");
 
-                    b.Property<int>("TipoValidacion2")
-                        .HasColumnType("int");
+                    b.Property<bool>("TipoValidacion2")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("Valores")
                         .HasMaxLength(100)
@@ -385,7 +387,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Observacion")
                         .HasMaxLength(200)
@@ -515,8 +517,8 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     b.Property<DateTime>("FechaSalida")
                         .HasColumnType("date");
 
-                    b.Property<int>("Firmado")
-                        .HasColumnType("int");
+                    b.Property<bool>("Firmado")
+                        .HasColumnType("bit");
 
                     b.Property<string>("HoraLlegada")
                         .IsRequired()
@@ -643,7 +645,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Mensaje")
                         .IsRequired()
@@ -681,7 +683,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.RolesUsuarios", b =>
                 {
                     b.Property<string>("IdUsuario")
-                        .HasColumnType("nvarchar(150)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnOrder(0);
 
                     b.Property<string>("IdRol")
@@ -714,7 +716,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("NombreArchivo")
                         .IsRequired()
@@ -774,8 +776,8 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
-                    b.Property<int>("Estado")
-                        .HasColumnType("int");
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
@@ -788,7 +790,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Mensaje")
                         .IsRequired()
@@ -799,15 +801,13 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("Seguimiento")
-                        .HasColumnType("int");
+                    b.Property<bool>("Seguimiento")
+                        .HasColumnType("bit");
 
                     b.Property<int>("TipoConsulta")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Estado");
 
                     b.HasIndex("IdAerolinea");
 
@@ -919,47 +919,55 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Usuario", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
+                    b.Property<bool>("AccessFailedCount")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("Activo")
-                        .HasColumnType("int");
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Apellido")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Cargo")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Clave")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.Property<int>("EmailConfirmed")
-                        .HasColumnType("int");
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("LockoutEnabled")
-                        .HasColumnType("int");
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
 
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
+                    b.Property<DateTime>("LockoutEnd")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("NormalizedUserName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("NumeroDocumento")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
@@ -967,27 +975,30 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PhoneNumberConfirmed")
-                        .HasColumnType("int");
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("TipoDocumento")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
 
-                    b.Property<int>("TwoFactorEnabled")
-                        .HasColumnType("int");
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
 
                     b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuario", (string)null);
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.UsuariosAerolineas", b =>
@@ -1002,7 +1013,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("IdUsuario")
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
@@ -1053,12 +1064,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Causal", b =>
                 {
-                    b.HasOne("Opain.Jarvis.Dominio.Entidades.U_Item", "U_Item2")
-                        .WithMany()
-                        .HasForeignKey("Estado")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Opain.Jarvis.Dominio.Entidades.U_Item", "U_Item")
                         .WithMany()
                         .HasForeignKey("Tipo")
@@ -1066,8 +1071,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .IsRequired();
 
                     b.Navigation("U_Item");
-
-                    b.Navigation("U_Item2");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Ciudad", b =>
@@ -1235,12 +1238,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Ticket", b =>
                 {
-                    b.HasOne("Opain.Jarvis.Dominio.Entidades.U_Item", "U_Item2")
-                        .WithMany()
-                        .HasForeignKey("Estado")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Opain.Jarvis.Dominio.Entidades.Aerolinea", "Aerolinea")
                         .WithMany("Tickets")
                         .HasForeignKey("IdAerolinea")
@@ -1262,8 +1259,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     b.Navigation("Aerolinea");
 
                     b.Navigation("U_Item");
-
-                    b.Navigation("U_Item2");
 
                     b.Navigation("Usuario");
                 });

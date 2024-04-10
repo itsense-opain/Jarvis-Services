@@ -53,7 +53,7 @@ namespace Jarvis_Services.Controllers
             try
             {
                 var respuestaCausales = await causalAplicacion.ObtenerPorTipoAsync(tipo);
-                var respuesta = respuestaCausales.Where(p => p.Estado ==1 ).ToList();
+                var respuesta = respuestaCausales.Where(p => p.Estado == true).ToList();
 
                 _logger.LogInformation("Se ejecutó CausalController.ObtenerPorTipoAsync");
                 return Ok(respuesta);

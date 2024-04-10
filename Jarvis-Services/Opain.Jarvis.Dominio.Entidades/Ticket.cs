@@ -29,9 +29,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(300)]
         public string Adjunto { get; set; }
         [Required]
-        [ForeignKey("U_Item2")]
-        public int Estado { get; set; }
-        public U_Item U_Item2 { get; set; }
+        public bool Estado { get; set; }
         [Required]
         [ForeignKey("Aerolinea")]
         public int IdAerolinea { get; set; }
@@ -39,7 +37,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         [ForeignKey("Usuario")]
         public string IdUsuario { get; set; }
         [Required]
-        public int Seguimiento { get; set; }
+        public bool Seguimiento { get; set; }
         public Aerolinea Aerolinea { get; set; }                
         public Usuario Usuario { get; set; }                                     
         public virtual ICollection<RespuestaTicket> RespuestasTickets { get; set; }

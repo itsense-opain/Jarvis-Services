@@ -21,6 +21,6 @@ namespace Opain.Jarvis.Dominio.Entidades
         public int Tipo { get; set; }
 
         [Display(Name = "Estado")]
-        public int Estado { get; set; }
+        public bool Estado { get; set; }
     }
 }

@@ -24,9 +24,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public U_Item U_Item { get; set; }
 
         [Required]
-        [ForeignKey("U_Item2")]
-        public int Estado { get; set; }
-        public U_Item U_Item2 { get; set; }
+        public bool Estado { get; set; }
 
         // public ICollection<NovedadProceso> NovedadesProceso { get; set; }
     }
