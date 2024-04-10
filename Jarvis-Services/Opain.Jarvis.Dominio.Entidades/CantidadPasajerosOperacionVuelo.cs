@@ -12,7 +12,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         [ForeignKey("OperacionesVuelo")]
         public int IdVuelo { get; set; }
-        public OperacionesVuelo OperacionesVuelo { get; set; }
+        public OperacionesVuelo OperacionesVuelo { get; set; } 
         [Required]
         [ForeignKey("CategoriaPasajeros")]
         public int CodPasajero { get; set; }

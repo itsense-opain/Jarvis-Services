@@ -13,7 +13,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(256)]
         public string NombreArchivo { get; set; }
         [Required]
-        public int OperacionesVuelosId { get; set; }
+        [ForeignKey("OperacionesVuelo")]
+        public int IdOperacionVuelo { get; set; }
+        public OperacionesVuelo OperacionesVuelo { get; set; }
         [Required]
         [MaxLength(45)]
         public string TipoArchivo { get; set; }

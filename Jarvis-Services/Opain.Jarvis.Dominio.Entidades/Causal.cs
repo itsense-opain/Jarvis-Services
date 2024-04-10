@@ -28,6 +28,6 @@ namespace Opain.Jarvis.Dominio.Entidades
         public int Estado { get; set; }
         public U_Item U_Item2 { get; set; }
 
-        public ICollection<NovedadProceso> NovedadesProceso { get; set; }
+        // public ICollection<NovedadProceso> NovedadesProceso { get; set; }
     }
 }

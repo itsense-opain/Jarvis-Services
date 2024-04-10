@@ -13,8 +13,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string NombreUsuario { get; set; }
         [Column(TypeName = "BIT")]
         public bool AceptarPoliticas { get; set; }
+        [DataType(DataType.Date)]
         public DateTime Fecha { get; set; }
-        [MaxLength(5)]
+        [MaxLength(6)]
         public string Hora { get; set; }
         [MaxLength(256)]
         public string Email { get; set; }

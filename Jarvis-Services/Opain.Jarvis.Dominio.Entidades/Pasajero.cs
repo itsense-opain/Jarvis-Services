@@ -22,6 +22,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         public DateTime FechaVuelo { get; set; }
         [Required]
+        [MaxLength(15)]
         public string NumeroVuelo { get; set; }
         [Required]
         [MaxLength(15)]
@@ -30,6 +31,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string Realiza_viaje { get; set; }
         [MaxLength(45)]
         public string Motivo_exencion { get; set; }
+        [Required]
+        [ForeignKey("RutaArchivos")]
         public int IdCargue { get; set; }
+        public RutaArchivos RutaArchivos { get; set; }
     }
 }

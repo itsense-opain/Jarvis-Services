@@ -147,16 +147,16 @@ namespace Opain.Jarvis.Aplicacion.Principal
                 {
                     SePuedeLiquidar = true;
                     //PasajeroTransitoOtd consulta = new PasajeroTransitoOtd();
-                    if (Vuelo.PasajerosTransitos.Count > 0)
-                    {
-                        foreach (Opain.Jarvis.Dominio.Entidades.PasajeroTransito Pasajero in Vuelo.PasajerosTransitos)
-                        {
-                            if (Pasajero.Firmado == 0)
-                            {
-                                SePuedeLiquidar = false;
-                            }
-                        }
-                    }
+                    //if (Vuelo.PasajerosTransitos.Count > 0)
+                    //{
+                    //    foreach (Opain.Jarvis.Dominio.Entidades.PasajeroTransito Pasajero in Vuelo.PasajerosTransitos)
+                    //    {
+                    //        if (Pasajero.Firmado == 0)
+                    //        {
+                    //            SePuedeLiquidar = false;
+                    //        }
+                    //    }
+                    //}
                     if (SePuedeLiquidar)
                     {
                         Lista.Add(Vuelo);
@@ -219,17 +219,17 @@ namespace Opain.Jarvis.Aplicacion.Principal
                     //PasajeroTransitoOtd consulta = new PasajeroTransitoOtd();
                     if (Vuelo.TipoVuelo == "INT")
                     {
-                        if (Vuelo.PasajerosTransitos.Count > 0)
-                        {
-                            foreach (Opain.Jarvis.Dominio.Entidades.PasajeroTransito Pasajero in Vuelo.PasajerosTransitos)
-                            {
-                                if (Pasajero.Firmado == 0 && Pasajero.Categoria == "TTC")
-                                {
-                                    SePuedeLiquidar = false;
-                                    break;
-                                }
-                            }
-                        }
+                        //if (Vuelo.PasajerosTransitos.Count > 0)
+                        //{
+                        //    foreach (Opain.Jarvis.Dominio.Entidades.PasajeroTransito Pasajero in Vuelo.PasajerosTransitos)
+                        //    {
+                        //        if (Pasajero.Firmado == 0 && Pasajero.Categoria == "TTC")
+                        //        {
+                        //            SePuedeLiquidar = false;
+                        //            break;
+                        //        }
+                        //    }
+                        //}
                     }
                     if (SePuedeLiquidar)
                     {

@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
 namespace Opain.Jarvis.Dominio.Entidades
 {
     public class Ciudad
@@ -22,8 +20,8 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         public bool IdEstado { get; set; }
         public string Codigo { get; set; }       
-        public ICollection<Vuelo> Origenes { get; set; }
+        //public ICollection<Vuelo> Origenes { get; set; }
 
-        public ICollection<Vuelo> Destinos { get; set; }
+        //public ICollection<Vuelo> Destinos { get; set; }
     }
 }

@@ -12,12 +12,12 @@ namespace Opain.Jarvis.Dominio.Entidades
         public int Id { get; set; }
         [Required]
         [MaxLength(15)]
-        public string MatriculaVuelo { get; set; }
-        [DataType(DataType.Date)]
+        public string MatriculaVuelo { get; set; }        
         [Required]
+        [DataType(DataType.Date)]
         public DateTime FechaVuelo { get; set; }
         [Required]
-        [MaxLength(5)]
+        [MaxLength(6)]
         public string HoraVuelo { get; set; }
         [Required]
         public int TotalEmbarcados { get; set; }       
@@ -50,19 +50,18 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string OrigenDes { get; set; }
         [Required]
         [MaxLength(45)]
-        public string Origen { get; set; }
-        [DataType(DataType.Date)]
+        public string Origen { get; set; }        
         [Required]
+        [DataType(DataType.Date)]
         public DateTime FechaLlegada { get; set; }
         [Required]
-        [MaxLength(5)]
+        [MaxLength(6)]
         public string HoraLlegada { get; set; }
         public int? TotalEmbarcadosAdd { get; set; }
         public int? TotalEmbarcados_LIQ { get; set; }
         public DateTime FechaCreacion { get; set; }
-        public ICollection<RutaArchivos> Archivos { get; set; }
-        public ICollection<Pasajero> Pasajeros { get; set; }
-        public ICollection<PasajeroTransito> PasajerosTransitos { get; set; }
-        public ICollection<NovedadProceso> NovedadesProceso { get; set; }
+        //public ICollection<Pasajero> Pasajeros { get; set; }
+        //public ICollection<PasajeroTransito> PasajerosTransitos { get; set; }
+        //public ICollection<NovedadProceso> NovedadesProceso { get; set; }
     }
 }

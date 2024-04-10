@@ -15,6 +15,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public Ticket Ticket { get; set; }
         [Required]
         public string Mensaje { get; set; }
+        [MaxLength(300)]
         public string Adjunto { get; set; }
         [Required]
         public DateTime FechaCreacion { get; set; }

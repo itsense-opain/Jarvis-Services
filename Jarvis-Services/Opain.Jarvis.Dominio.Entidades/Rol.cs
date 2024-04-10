@@ -11,7 +11,7 @@ namespace Opain.Jarvis.Dominio.Entidades
             base.Name = roleName;
         }
         public virtual ICollection<RolesUsuarios> RolesUsuarios { get; set; }
-        public virtual ICollection<ClaimRol> ClaimRol { get; set; }
+        //public virtual ICollection<ClaimRol> ClaimRol { get; set; }
     }
 
 }

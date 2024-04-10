@@ -12,8 +12,6 @@ namespace Opain.Jarvis.Dominio.Entidades
         public int CantidadUsuarios { get; set; }
 
         public string Sigla { get; set; }
-
-
         public IList<HorarioAerolineaOtd> HorarioAerolinea { get; set; }
         public IList<VuelosOtd> Vuelos { get; set; }
     }

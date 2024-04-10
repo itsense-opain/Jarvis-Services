@@ -67,7 +67,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             IList<Aerolinea> _aerolinea = null;
 
             _aerolinea = await _contexto.Aerolineas
-                   .Include(a => a.HorarioAerolinea)
+                   //.Include(a => a.HorarioAerolinea)
                    .Where(x => x.Id.Equals(idAerolinea))
                    .ToListAsync();
 

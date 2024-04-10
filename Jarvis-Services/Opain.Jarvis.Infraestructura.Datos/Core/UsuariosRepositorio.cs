@@ -112,7 +112,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             var usuario = await contexto.Usuarios
                 .Include(ua => ua.UsuariosAerolineas)
                     .ThenInclude(a => a.Aerolinea)
-                    .ThenInclude(ah => ah.HorarioAerolinea)
+                    //.ThenInclude(ah => ah.HorarioAerolinea)
                 .Include(ur => ur.RolesUsuarios)
                     .ThenInclude(r => r.Rol)
             .FirstOrDefaultAsync(x => x.Id.Equals(id));
@@ -125,7 +125,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             var usuario = await contexto.Usuarios
                 .Include(ua => ua.UsuariosAerolineas)
                     .ThenInclude(a => a.Aerolinea)
-                    .ThenInclude(ah => ah.HorarioAerolinea)
+                    //.ThenInclude(ah => ah.HorarioAerolinea)
                 .Include(ur => ur.RolesUsuarios)
                     .ThenInclude(r => r.Rol)
             .FirstOrDefaultAsync(x => x.Email.Equals(email));
@@ -138,7 +138,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             var usuario = await contexto.Usuarios
                 .Include(ua => ua.UsuariosAerolineas)
                     .ThenInclude(a => a.Aerolinea)
-                    .ThenInclude(ah => ah.HorarioAerolinea)
+                    //.ThenInclude(ah => ah.HorarioAerolinea)
                 .Include(ur => ur.RolesUsuarios)
                     .ThenInclude(r => r.Rol)
             .FirstOrDefaultAsync(x => x.UserName.Equals(alias));
@@ -152,7 +152,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             var usuario = await contexto.Usuarios
                .Include(ua => ua.UsuariosAerolineas)
                    .ThenInclude(a => a.Aerolinea)
-                   .ThenInclude(ah => ah.HorarioAerolinea)
+                   //.ThenInclude(ah => ah.HorarioAerolinea)
                .Include(ur => ur.RolesUsuarios)
                    .ThenInclude(r => r.Rol)
            .FirstOrDefaultAsync(x => x.UserName.Equals(usuarioNombre));
@@ -172,7 +172,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             userUpdated = await contexto.Usuarios
                 .Include(ua => ua.UsuariosAerolineas)
                     .ThenInclude(a => a.Aerolinea)
-                    .ThenInclude(ah => ah.HorarioAerolinea)
+                    //.ThenInclude(ah => ah.HorarioAerolinea)
                 .Include(ur => ur.RolesUsuarios)
                     .ThenInclude(r => r.Rol)
             .FirstOrDefaultAsync(x => x.UserName.Equals(usuarioNombre));
@@ -187,7 +187,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
             IList<Usuario> usuario = await contexto.Usuarios
                 .Include(ua => ua.UsuariosAerolineas)
                     .ThenInclude(a => a.Aerolinea)
-                    .ThenInclude(ah => ah.HorarioAerolinea)
+                    //.ThenInclude(ah => ah.HorarioAerolinea)
                 .Include(ur => ur.RolesUsuarios)
                     .ThenInclude(r => r.Rol)
             .ToListAsync();

@@ -54,7 +54,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Core
 
         public async Task<IList<RutaArchivos>> ObtenerPorOperacionAsync(int idOperacion)
         {
-            return await _contexto.RutaArchivos.Where(x => x.OperacionesVuelosId == idOperacion).ToListAsync();
+            return await _contexto.RutaArchivos.Where(x => x.IdOperacionVuelo == idOperacion).ToListAsync();
         }
     }
 }

@@ -12,9 +12,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         public decimal ValorCOP { get; set; }
         [Required]
-        public decimal ValorUSD { get; set; }
-        [DataType(DataType.Date)]
+        public decimal ValorUSD { get; set; }        
         [Required]
+        [DataType(DataType.Date)]
         public DateTime Fecha { get; set; }
     }
 }

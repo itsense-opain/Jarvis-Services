@@ -18,14 +18,14 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string TipoError { get; set; }
         [Required]
         [MaxLength(500)]
-        public string Error { get; set; }
-        [DataType(DataType.Date)]
+        public string Error { get; set; }        
         [Required]
+        [DataType(DataType.Date)]
         public DateTime Fecha { get; set; }
         [MaxLength(100)]
         public string Valores { get; set; }
         [MaxLength(10)]
-        public int ValoresNuevos { get; set; }
+        public string ValoresNuevos { get; set; }
         public int TipoValidacion { get; set; }
         public int TipoValidacion2 { get; set; }
     }

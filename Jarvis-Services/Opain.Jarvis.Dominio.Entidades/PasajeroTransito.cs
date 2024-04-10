@@ -22,18 +22,19 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         public int IdVueloSalida { get; set; }
         [Required]
+        [MaxLength(5)]
         public string Categoria { get; set; }
         [Required]
         [DataType(DataType.Date)]
         public DateTime FechaLlegada { get; set; }
         [Required]
-        [MaxLength(5)]
+        [MaxLength(6)]
         public string HoraLlegada { get; set; }
         [Required]
         [DataType(DataType.Date)]
         public DateTime FechaSalida { get; set; }
         [Required]
-        [MaxLength(5)]
+        [MaxLength(6)]
         public string HoraSalida { get; set; }
         public DateTime FechaHoraCargue { get; set; }
         public int Firmado { get; set; }
@@ -58,7 +59,10 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string AerolineaLlegada { get; set; }
         [MaxLength(100)]
         public string Observaciones { get; set; }
-        public bool TasaCobrada { get; set; }        
-        public int IdCargue { get; set; }        
+        public bool TasaCobrada { get; set; }
+        [Required]
+        [ForeignKey("RutaArchivos")]
+        public int IdCargue { get; set; }
+        public RutaArchivos RutaArchivos { get; set; }       
     }
 }

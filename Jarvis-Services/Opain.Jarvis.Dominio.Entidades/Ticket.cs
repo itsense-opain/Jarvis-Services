@@ -11,12 +11,14 @@ namespace Opain.Jarvis.Dominio.Entidades
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        [MaxLength(50)]
         public string NumeroTicket { get; set; }
         [Required]
         [ForeignKey("U_Item")]
         public int TipoConsulta { get; set; }
         public U_Item U_Item { get; set; }
         [Required]
+        [MaxLength(150)]
         public string Asunto { get; set; }
         [DataType(DataType.Date)]
         public DateTime FechaVuelo { get; set; }
@@ -24,6 +26,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public DateTime FechaCreacion { get; set; }
         [Required]
         public string Mensaje { get; set; }
+        [MaxLength(300)]
         public string Adjunto { get; set; }
         [Required]
         [ForeignKey("U_Item2")]

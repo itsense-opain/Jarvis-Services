@@ -152,7 +152,7 @@ namespace Opain.Jarvis.Dominio.Entidades
                 Id = objEntrada.Id,
                 NombreArchivo = objEntrada.Nombre,
                 TipoArchivo = objEntrada.Tipo,
-                OperacionesVuelosId = objEntrada.Operacion
+                IdOperacionVuelo = objEntrada.Operacion
             };
 
             return objSalidaOtd;
@@ -164,7 +164,7 @@ namespace Opain.Jarvis.Dominio.Entidades
                 Id = objEntrada.Id,
                 Nombre = objEntrada.NombreArchivo,
                 Tipo = objEntrada.TipoArchivo,
-                Operacion = objEntrada.OperacionesVuelosId
+                Operacion = objEntrada.IdOperacionVuelo
             };
 
             return objSalidaOtd;

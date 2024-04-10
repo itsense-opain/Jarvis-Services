@@ -20,13 +20,15 @@ namespace Opain.Jarvis.Dominio.Entidades
         public int PDFPasajeros { get; set; }
         [Required]
         public int CantidadUsuarios { get; set; }
+        [MaxLength(45)]
         public string Codigo { get; set; }
+        [MaxLength(45)]
         public string Sigla { get; set; }
         public DateTime FechaCreacion { get; set; }        
         public DateTime FechaActualizacion { get; set; }        
-        public IList<Vuelo> Vuelos { get; set; }
+        //public IList<Vuelo> Vuelos { get; set; }
         public IList<UsuariosAerolineas> UsuariosAerolineas { get; set; }
-        public IList<HorarioAerolinea> HorarioAerolinea { get; set; }
+        //public IList<HorarioAerolinea> HorarioAerolinea { get; set; }
         public virtual ICollection<Ticket> Tickets { get; set; }
         public IList<OperacionesVuelo> OperacionesVuelos { get; set; }
     }
