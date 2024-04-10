@@ -151,7 +151,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     TipoDocumento = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: true),
                     NumeroDocumento = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     Activo = table.Column<bool>(type: "bit", nullable: false),
-                    Clave = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

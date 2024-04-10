@@ -43,7 +43,6 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(20)]
         public string NumeroDocumento { get; set; }
         public bool Activo { get; set; }
-        public string Clave { get; set; }
         //public virtual ICollection<ClaimUsuario> ClaimUsuario { get; set; }
         //public virtual ICollection<LoginUsuario> LoginUsuario { get; set; }
         //public virtual ICollection<TokenUsuario> TokenUsuario { get; set; }
