@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("RolesUsuarios")]
     public class RolesUsuarios //: IdentityUserRole<string>
     {
         [Key]

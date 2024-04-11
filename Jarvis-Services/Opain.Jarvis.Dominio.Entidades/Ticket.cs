@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("Ticket")]
     public class Ticket
     {
         [Key]

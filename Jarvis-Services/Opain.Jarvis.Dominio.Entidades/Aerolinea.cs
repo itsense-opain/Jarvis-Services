@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("Aerolineas")]
     public class Aerolinea
     {
         [Key]
@@ -24,8 +25,8 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string Codigo { get; set; }
         [MaxLength(45)]
         public string Sigla { get; set; }
-        public DateTime FechaCreacion { get; set; }        
-        public DateTime FechaActualizacion { get; set; }        
+        public DateTime? FechaCreacion { get; set; }        
+        public DateTime? FechaActualizacion { get; set; }        
         //public IList<Vuelo> Vuelos { get; set; }
         public IList<UsuariosAerolineas> UsuariosAerolineas { get; set; }
         //public IList<HorarioAerolinea> HorarioAerolinea { get; set; }

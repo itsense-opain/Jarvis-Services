@@ -2,11 +2,12 @@
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("Ciudades")]
     public class Ciudad
     {
         [Key]
         [Required]
-        [MaxLength(3)]
+        [MaxLength(5)]
         public string Id { get; set; }
 
         [Required]

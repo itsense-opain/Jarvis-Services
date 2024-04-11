@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("Tripulantes")]
     public class Tripulantes
     {
         [Key]

@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("OperacionesVuelo")]
     public class OperacionesVuelo
     {
         [Key]

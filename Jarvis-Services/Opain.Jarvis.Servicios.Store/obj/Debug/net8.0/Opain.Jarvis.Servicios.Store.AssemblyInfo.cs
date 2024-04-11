@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Opain.Jarvis.Servicios.Store")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c6612a5c5568b3d68aba8d03f6fd90518ef5758")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+550f34ef13596b010fee22af7d4d49c70dc9caa6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Opain.Jarvis.Servicios.Store")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Opain.Jarvis.Servicios.Store")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

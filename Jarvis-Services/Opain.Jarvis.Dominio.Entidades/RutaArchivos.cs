@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("RutaArchivos")]
     public class RutaArchivos
     {
         [Key]

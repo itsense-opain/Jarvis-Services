@@ -25,7 +25,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public string PhoneNumber { get; set; }
         public bool PhoneNumberConfirmed { get; set; }
         public bool TwoFactorEnabled { get; set; }
-        public DateTime LockoutEnd { get; set; }
+        public DateTime? LockoutEnd { get; set; }
         [Required]
         public bool LockoutEnabled { get; set; }
         [Required]

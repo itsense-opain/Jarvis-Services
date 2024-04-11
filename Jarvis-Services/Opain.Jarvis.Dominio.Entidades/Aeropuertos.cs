@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Opain.Jarvis.Dominio.Entidades
 {
+    [Table("Aeropuertos")]
     public class Aeropuertos
     {
         [Key]

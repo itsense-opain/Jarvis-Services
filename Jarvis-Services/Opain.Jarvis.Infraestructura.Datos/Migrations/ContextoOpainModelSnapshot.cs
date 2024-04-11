@@ -37,10 +37,10 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(45)
                         .HasColumnType("nvarchar(45)");
 
-                    b.Property<DateTime>("FechaActualizacion")
+                    b.Property<DateTime?>("FechaActualizacion")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FechaCreacion")
+                    b.Property<DateTime?>("FechaCreacion")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GETDATE()");
@@ -202,8 +202,8 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Ciudad", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(3)
-                        .HasColumnType("nvarchar(3)");
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("Codigo")
                         .HasColumnType("nvarchar(max)");
@@ -316,7 +316,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdAerolinea");
 
-                    b.ToTable("OperacionesVuelos");
+                    b.ToTable("OperacionesVuelo");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.OperacionesVueloErrores", b =>
@@ -365,7 +365,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdVuelo");
 
-                    b.ToTable("OperacionesVuelosErrores");
+                    b.ToTable("OperacionesVueloErrores");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.OperacionesVueloSeguimiento", b =>
@@ -401,7 +401,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdUsuario");
 
-                    b.ToTable("OperacionVueloSeguimiento");
+                    b.ToTable("OperacionesVueloSeguimiento");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Pais", b =>
@@ -420,7 +420,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Paises");
+                    b.ToTable("Pais");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Pasajero", b =>
@@ -474,7 +474,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdOperacionVuelo");
 
-                    b.ToTable("Pasajeros");
+                    b.ToTable("Pasajero");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.PasajeroTransito", b =>
@@ -575,7 +575,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdOperacionVuelo");
 
-                    b.ToTable("PasajerosTransito");
+                    b.ToTable("PasajeroTransito");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.PoliticasDeTratamientoDeDatos", b =>
@@ -657,7 +657,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdUsuario");
 
-                    b.ToTable("RespuestasTickets");
+                    b.ToTable("RespuestaTicket");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Rol", b =>
@@ -756,7 +756,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TasasAeroportuarias");
+                    b.ToTable("TasaAeroportuaria");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Ticket", b =>
@@ -815,7 +815,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("TipoConsulta");
 
-                    b.ToTable("Tickets");
+                    b.ToTable("Ticket");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Tripulantes", b =>
@@ -934,9 +934,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Clave")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ConcurrencyStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -951,7 +948,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("LockoutEnd")
+                    b.Property<DateTime?>("LockoutEnd")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")

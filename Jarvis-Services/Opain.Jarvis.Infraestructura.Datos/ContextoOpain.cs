@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Opain.Jarvis.Dominio.Entidades;
-using System.Reflection.Emit;
 namespace Opain.Jarvis.Infraestructura.Datos
 {
     public class ContextoOpain : DbContext
     {
+        public DbSet<U_Catalogo> U_Catalogo { get; set; }
+        public DbSet<U_Item> U_Item { get; set; }
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Ciudad> Ciudades { get; set; }
         public DbSet<Aerolinea> Aerolineas { get; set; }
@@ -94,7 +95,6 @@ namespace Opain.Jarvis.Infraestructura.Datos
                 b.Property(e => e.Id).HasMaxLength(150);
             });
 
-            builder.Entity<RolesUsuarios>().HasKey(r => r.IdUsuario);
 
             //builder.Entity<ClaimUsuario>(b =>
             //{
