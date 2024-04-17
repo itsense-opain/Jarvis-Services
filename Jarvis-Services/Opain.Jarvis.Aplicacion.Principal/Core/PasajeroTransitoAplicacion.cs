@@ -68,7 +68,7 @@ namespace Opain.Jarvis.Aplicacion.Principal
             if (vueloLlegada != null)
             {
                 p.IdVueloLlegada = vueloLlegada.Id;
-                p.AerolineaLlegada = vueloLlegada.Aerolinea.Nombre;
+                p.AerolineaLlegada = vueloLlegada.Aerolinea.Id;
             }
             else
             {
@@ -78,7 +78,7 @@ namespace Opain.Jarvis.Aplicacion.Principal
             if (vueloSalida != null)
             {
                 p.IdVueloSalida = vueloSalida.Id;
-                p.AerolineaSalida = vueloSalida.Aerolinea.Nombre;
+                p.AerolineaSalida = vueloSalida.Aerolinea.Id;
             }
             else
             {

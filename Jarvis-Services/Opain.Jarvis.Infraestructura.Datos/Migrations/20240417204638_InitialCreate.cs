@@ -32,20 +32,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Aeropuertos",
-                columns: table => new
-                {
-                    CodigoIATA = table.Column<string>(type: "nvarchar(3)", maxLength: 3, nullable: false),
-                    CobroCausal64VuelosDom = table.Column<bool>(type: "bit", nullable: false),
-                    Ciudad = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: true),
-                    Pais = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Aeropuertos", x => x.CodigoIATA);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Pais",
                 columns: table => new
                 {
@@ -186,8 +172,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Id = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     IdPais = table.Column<string>(type: "nvarchar(2)", nullable: false),
-                    IdEstado = table.Column<bool>(type: "bit", nullable: false),
-                    Codigo = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    IdEstado = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -228,8 +213,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "CategoriaPasajeros",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     CodPasajero = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Descripcion = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
@@ -240,7 +223,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CategoriaPasajeros", x => x.Id);
+                    table.PrimaryKey("PK_CategoriaPasajeros", x => x.CodPasajero);
                     table.ForeignKey(
                         name: "FK_CategoriaPasajeros_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
@@ -277,14 +260,12 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "UsuariosAerolineas",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     IdAerolinea = table.Column<int>(type: "int", nullable: false),
-                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    IdUsuario = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UsuariosAerolineas", x => x.Id);
+                    table.PrimaryKey("PK_UsuariosAerolineas", x => new { x.IdAerolinea, x.IdUsuario });
                     table.ForeignKey(
                         name: "FK_UsuariosAerolineas_Aerolineas_IdAerolinea",
                         column: x => x.IdAerolinea,
@@ -295,7 +276,33 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         name: "FK_UsuariosAerolineas_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
                         principalTable: "Usuarios",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Aeropuertos",
+                columns: table => new
+                {
+                    CodigoIATA = table.Column<string>(type: "nvarchar(3)", maxLength: 3, nullable: false),
+                    Ciudad = table.Column<string>(type: "nvarchar(5)", nullable: false),
+                    Pais = table.Column<string>(type: "nvarchar(2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Aeropuertos", x => x.CodigoIATA);
+                    table.ForeignKey(
+                        name: "FK_Aeropuertos_Ciudades_Ciudad",
+                        column: x => x.Ciudad,
+                        principalTable: "Ciudades",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Aeropuertos_Pais_Pais",
+                        column: x => x.Pais,
+                        principalTable: "Pais",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -334,12 +341,11 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     PagoUSD = table.Column<int>(type: "int", nullable: false),
                     TipoVuelo = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     NumeroVuelo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    Destino = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
+                    Destino = table.Column<string>(type: "nvarchar(5)", nullable: false),
                     IdAerolinea = table.Column<int>(type: "int", nullable: false),
                     EstadoProceso = table.Column<int>(type: "int", nullable: false),
                     NumeroVueloLlegada = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    OrigenDes = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: false),
-                    Origen = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: false),
+                    Origen = table.Column<string>(type: "nvarchar(5)", nullable: false),
                     FechaLlegada = table.Column<DateTime>(type: "date", nullable: false),
                     HoraLlegada = table.Column<string>(type: "nvarchar(6)", maxLength: 6, nullable: false),
                     TotalEmbarcadosAdd = table.Column<int>(type: "int", nullable: true),
@@ -353,6 +359,18 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         name: "FK_OperacionesVuelo_Aerolineas_IdAerolinea",
                         column: x => x.IdAerolinea,
                         principalTable: "Aerolineas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OperacionesVuelo_Ciudades_Destino",
+                        column: x => x.Destino,
+                        principalTable: "Ciudades",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OperacionesVuelo_Ciudades_Origen",
+                        column: x => x.Origen,
+                        principalTable: "Ciudades",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -411,7 +429,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdVuelo = table.Column<int>(type: "int", nullable: false),
-                    CodPasajero = table.Column<int>(type: "int", nullable: false),
+                    CodPasajero = table.Column<string>(type: "nvarchar(5)", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaActualizacion = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -424,7 +442,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         name: "FK_CantidadPasajerosOperacionVuelo_CategoriaPasajeros_CodPasajero",
                         column: x => x.CodPasajero,
                         principalTable: "CategoriaPasajeros",
-                        principalColumn: "Id",
+                        principalColumn: "CodPasajero",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CantidadPasajerosOperacionVuelo_OperacionesVuelo_IdVuelo",
@@ -437,7 +455,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         column: x => x.IdUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -492,7 +510,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         column: x => x.Estado,
                         principalTable: "U_Item",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_OperacionesVueloSeguimiento_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
@@ -557,7 +575,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         column: x => x.IdUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -568,7 +586,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdOperacionVuelo = table.Column<int>(type: "int", nullable: false),
                     NombrePasajero = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
-                    IdCategoriaPasajero = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
+                    IdCategoriaPasajero = table.Column<string>(type: "nvarchar(5)", nullable: false),
                     FechaVuelo = table.Column<DateTime>(type: "date", nullable: false),
                     NumeroVuelo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     MatriculaVuelo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
@@ -580,6 +598,12 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 {
                     table.PrimaryKey("PK_Pasajero", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Pasajero_CategoriaPasajeros_IdCategoriaPasajero",
+                        column: x => x.IdCategoriaPasajero,
+                        principalTable: "CategoriaPasajeros",
+                        principalColumn: "CodPasajero",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Pasajero_OperacionesVuelo_IdOperacionVuelo",
                         column: x => x.IdOperacionVuelo,
                         principalTable: "OperacionesVuelo",
@@ -590,7 +614,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         column: x => x.IdCargue,
                         principalTable: "RutaArchivos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -603,7 +627,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     NombrePasajero = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     IdVueloLlegada = table.Column<int>(type: "int", nullable: false),
                     IdVueloSalida = table.Column<int>(type: "int", nullable: false),
-                    Categoria = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
+                    Categoria = table.Column<string>(type: "nvarchar(5)", nullable: false),
                     FechaLlegada = table.Column<DateTime>(type: "date", nullable: false),
                     HoraLlegada = table.Column<string>(type: "nvarchar(6)", maxLength: 6, nullable: false),
                     FechaSalida = table.Column<DateTime>(type: "date", nullable: false),
@@ -612,11 +636,11 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     Firmado = table.Column<bool>(type: "bit", nullable: false),
                     FechaHoraFirma = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NumeroVueloSalida = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    Destino = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
-                    AerolineaSalida = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Destino = table.Column<string>(type: "nvarchar(5)", nullable: false),
+                    AerolineaSalida = table.Column<int>(type: "int", nullable: false),
                     NumeroVueloLlegada = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    Origen = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
-                    AerolineaLlegada = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Origen = table.Column<string>(type: "nvarchar(5)", nullable: false),
+                    AerolineaLlegada = table.Column<int>(type: "int", nullable: false),
                     Observaciones = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     TasaCobrada = table.Column<bool>(type: "bit", nullable: false),
                     IdCargue = table.Column<int>(type: "int", nullable: false)
@@ -624,6 +648,36 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PasajeroTransito", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_PasajeroTransito_Aerolineas_AerolineaLlegada",
+                        column: x => x.AerolineaLlegada,
+                        principalTable: "Aerolineas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PasajeroTransito_Aerolineas_AerolineaSalida",
+                        column: x => x.AerolineaSalida,
+                        principalTable: "Aerolineas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PasajeroTransito_CategoriaPasajeros_Categoria",
+                        column: x => x.Categoria,
+                        principalTable: "CategoriaPasajeros",
+                        principalColumn: "CodPasajero",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PasajeroTransito_Ciudades_Destino",
+                        column: x => x.Destino,
+                        principalTable: "Ciudades",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PasajeroTransito_Ciudades_Origen",
+                        column: x => x.Origen,
+                        principalTable: "Ciudades",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_PasajeroTransito_OperacionesVuelo_IdOperacionVuelo",
                         column: x => x.IdOperacionVuelo,
@@ -635,8 +689,18 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         column: x => x.IdCargue,
                         principalTable: "RutaArchivos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Aeropuertos_Ciudad",
+                table: "Aeropuertos",
+                column: "Ciudad");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Aeropuertos_Pais",
+                table: "Aeropuertos",
+                column: "Pais");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CantidadPasajerosOperacionVuelo_CodPasajero",
@@ -669,6 +733,11 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 column: "IdPais");
 
             migrationBuilder.CreateIndex(
+                name: "IX_OperacionesVuelo_Destino",
+                table: "OperacionesVuelo",
+                column: "Destino");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_OperacionesVuelo_EstadoProceso",
                 table: "OperacionesVuelo",
                 column: "EstadoProceso");
@@ -677,6 +746,11 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "IX_OperacionesVuelo_IdAerolinea",
                 table: "OperacionesVuelo",
                 column: "IdAerolinea");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OperacionesVuelo_Origen",
+                table: "OperacionesVuelo",
+                column: "Origen");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OperacionesVueloErrores_IdVuelo",
@@ -704,9 +778,34 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 column: "IdCargue");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Pasajero_IdCategoriaPasajero",
+                table: "Pasajero",
+                column: "IdCategoriaPasajero");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Pasajero_IdOperacionVuelo",
                 table: "Pasajero",
                 column: "IdOperacionVuelo");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PasajeroTransito_AerolineaLlegada",
+                table: "PasajeroTransito",
+                column: "AerolineaLlegada");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PasajeroTransito_AerolineaSalida",
+                table: "PasajeroTransito",
+                column: "AerolineaSalida");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PasajeroTransito_Categoria",
+                table: "PasajeroTransito",
+                column: "Categoria");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PasajeroTransito_Destino",
+                table: "PasajeroTransito",
+                column: "Destino");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PasajeroTransito_IdCargue",
@@ -717,6 +816,11 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "IX_PasajeroTransito_IdOperacionVuelo",
                 table: "PasajeroTransito",
                 column: "IdOperacionVuelo");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PasajeroTransito_Origen",
+                table: "PasajeroTransito",
+                column: "Origen");
 
             migrationBuilder.CreateIndex(
                 name: "IX_RespuestaTicket_IdTicket",
@@ -769,11 +873,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 column: "IdCatalogo");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UsuariosAerolineas_IdAerolinea",
-                table: "UsuariosAerolineas",
-                column: "IdAerolinea");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_UsuariosAerolineas_IdUsuario",
                 table: "UsuariosAerolineas",
                 column: "IdUsuario");
@@ -790,9 +889,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             migrationBuilder.DropTable(
                 name: "Causales");
-
-            migrationBuilder.DropTable(
-                name: "Ciudades");
 
             migrationBuilder.DropTable(
                 name: "OperacionesVueloErrores");
@@ -828,9 +924,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "CategoriaPasajeros");
 
             migrationBuilder.DropTable(
-                name: "Pais");
-
-            migrationBuilder.DropTable(
                 name: "RutaArchivos");
 
             migrationBuilder.DropTable(
@@ -849,7 +942,13 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                 name: "Aerolineas");
 
             migrationBuilder.DropTable(
+                name: "Ciudades");
+
+            migrationBuilder.DropTable(
                 name: "U_Item");
+
+            migrationBuilder.DropTable(
+                name: "Pais");
 
             migrationBuilder.DropTable(
                 name: "U_Catalogo");

@@ -61,8 +61,8 @@ namespace Opain.Jarvis.Servicios.Store.Metodos
                 try
                 {
                     Otd = new PasajeroTransitoOtd();
-                    Otd.AerolineaLlegada = oR["AerolineaLlegada"].ToString() == "" ? "" : oR["AerolineaLlegada"].ToString();
-                    Otd.AerolineaSalida = oR["AerolineaSalida"].ToString() == "" ? "" : oR["AerolineaSalida"].ToString();
+                    Otd.AerolineaLlegada = int.Parse(oR["AerolineaLlegada"].ToString()) == 0 ? 0 : int.Parse(oR["AerolineaLlegada"].ToString());
+                    Otd.AerolineaSalida = int.Parse(oR["AerolineaSalida"].ToString()) == 0 ? 0 : int.Parse(oR["AerolineaSalida"].ToString());
                     Otd.Destino = oR["Destino"].ToString() == "" ? "XXX" : oR["Destino"].ToString();
                     Otd.FechaHoraCargue = Comun.Funciones.TryParse(oR["FechaHoraCargue"].ToString());
                     Otd.FechaHoraFirma = Comun.Funciones.TryParse(oR["FechaHoraFirma"].ToString());

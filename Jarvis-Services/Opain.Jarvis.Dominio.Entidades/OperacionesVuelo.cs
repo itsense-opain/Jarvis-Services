@@ -32,8 +32,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(15)]
         public string NumeroVuelo { get; set; }
         [Required]
-        [MaxLength(5)]
+        [ForeignKey("Ciudad1")]
         public string Destino { get; set; }
+        public Ciudad Ciudad1 { get; set; }
         [Required]
         [ForeignKey("Aerolinea")]
         public int IdAerolinea { get; set; }
@@ -46,11 +47,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(15)]
         public string NumeroVueloLlegada { get; set; }
         [Required]
-        [MaxLength(45)]
-        public string OrigenDes { get; set; }
-        [Required]
-        [MaxLength(45)]
-        public string Origen { get; set; }        
+        [ForeignKey("Ciudad")]
+        public string Origen { get; set; }
+        public Ciudad Ciudad { get; set; }
         [Required]
         [DataType(DataType.Date)]
         public DateTime FechaLlegada { get; set; }

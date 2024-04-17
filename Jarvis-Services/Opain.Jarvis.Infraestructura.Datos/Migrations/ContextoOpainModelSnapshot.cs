@@ -72,17 +72,18 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasColumnType("nvarchar(3)");
 
                     b.Property<string>("Ciudad")
-                        .HasMaxLength(45)
-                        .HasColumnType("nvarchar(45)");
-
-                    b.Property<bool>("CobroCausal64VuelosDom")
-                        .HasColumnType("bit");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("Pais")
-                        .HasMaxLength(45)
-                        .HasColumnType("nvarchar(45)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2)");
 
                     b.HasKey("CodigoIATA");
+
+                    b.HasIndex("Ciudad");
+
+                    b.HasIndex("Pais");
 
                     b.ToTable("Aeropuertos");
                 });
@@ -98,8 +99,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
-                    b.Property<int>("CodPasajero")
-                        .HasColumnType("int");
+                    b.Property<string>("CodPasajero")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(5)");
 
                     b.Property<DateTime>("FechaActualizacion")
                         .HasColumnType("datetime2");
@@ -127,14 +129,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.CategoriaPasajeros", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<string>("CodPasajero")
-                        .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
@@ -161,7 +156,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                     b.Property<int>("Posicion")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("CodPasajero");
 
                     b.HasIndex("IdUsuario");
 
@@ -205,9 +200,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
-                    b.Property<string>("Codigo")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IdEstado")
                         .HasColumnType("bit");
 
@@ -237,7 +229,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("Destino")
                         .IsRequired()
-                        .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<int>("EstadoProceso")
@@ -282,13 +273,7 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("Origen")
                         .IsRequired()
-                        .HasMaxLength(45)
-                        .HasColumnType("nvarchar(45)");
-
-                    b.Property<string>("OrigenDes")
-                        .IsRequired()
-                        .HasMaxLength(45)
-                        .HasColumnType("nvarchar(45)");
+                        .HasColumnType("nvarchar(5)");
 
                     b.Property<int>("PagoCOP")
                         .HasColumnType("int");
@@ -312,9 +297,13 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Destino");
+
                     b.HasIndex("EstadoProceso");
 
                     b.HasIndex("IdAerolinea");
+
+                    b.HasIndex("Origen");
 
                     b.ToTable("OperacionesVuelo");
                 });
@@ -439,7 +428,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("IdCategoriaPasajero")
                         .IsRequired()
-                        .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<int>("IdOperacionVuelo")
@@ -472,6 +460,8 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasIndex("IdCargue");
 
+                    b.HasIndex("IdCategoriaPasajero");
+
                     b.HasIndex("IdOperacionVuelo");
 
                     b.ToTable("Pasajero");
@@ -485,24 +475,18 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AerolineaLlegada")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("AerolineaLlegada")
+                        .HasColumnType("int");
 
-                    b.Property<string>("AerolineaSalida")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("AerolineaSalida")
+                        .HasColumnType("int");
 
                     b.Property<string>("Categoria")
                         .IsRequired()
-                        .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("Destino")
                         .IsRequired()
-                        .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<DateTime>("FechaHoraCargue")
@@ -563,7 +547,6 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.Property<string>("Origen")
                         .IsRequired()
-                        .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<bool>("TasaCobrada")
@@ -571,9 +554,19 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AerolineaLlegada");
+
+                    b.HasIndex("AerolineaSalida");
+
+                    b.HasIndex("Categoria");
+
+                    b.HasIndex("Destino");
+
                     b.HasIndex("IdCargue");
 
                     b.HasIndex("IdOperacionVuelo");
+
+                    b.HasIndex("Origen");
 
                     b.ToTable("PasajeroTransito");
                 });
@@ -1000,25 +993,38 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.UsuariosAerolineas", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<int>("IdAerolinea")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnOrder(0);
 
                     b.Property<string>("IdUsuario")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnOrder(1);
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdAerolinea");
+                    b.HasKey("IdAerolinea", "IdUsuario");
 
                     b.HasIndex("IdUsuario");
 
                     b.ToTable("UsuariosAerolineas");
+                });
+
+            modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.Aeropuertos", b =>
+                {
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Ciudad", "Ciudad1")
+                        .WithMany()
+                        .HasForeignKey("Ciudad")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Pais", "Pais1")
+                        .WithMany()
+                        .HasForeignKey("Pais")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ciudad1");
+
+                    b.Navigation("Pais1");
                 });
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.CantidadPasajerosOperacionVuelo", b =>
@@ -1083,6 +1089,12 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.OperacionesVuelo", b =>
                 {
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Ciudad", "Ciudad1")
+                        .WithMany()
+                        .HasForeignKey("Destino")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Opain.Jarvis.Dominio.Entidades.U_Item", "U_Item")
                         .WithMany()
                         .HasForeignKey("EstadoProceso")
@@ -1095,7 +1107,17 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Ciudad", "Ciudad")
+                        .WithMany()
+                        .HasForeignKey("Origen")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Aerolinea");
+
+                    b.Navigation("Ciudad");
+
+                    b.Navigation("Ciudad1");
 
                     b.Navigation("U_Item");
                 });
@@ -1146,11 +1168,19 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.CategoriaPasajeros", "CategoriaPasajeros")
+                        .WithMany()
+                        .HasForeignKey("IdCategoriaPasajero")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Opain.Jarvis.Dominio.Entidades.OperacionesVuelo", "OperacionesVuelo")
                         .WithMany()
                         .HasForeignKey("IdOperacionVuelo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("CategoriaPasajeros");
 
                     b.Navigation("OperacionesVuelo");
 
@@ -1159,6 +1189,30 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
             modelBuilder.Entity("Opain.Jarvis.Dominio.Entidades.PasajeroTransito", b =>
                 {
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Aerolinea", "Aerolinea1")
+                        .WithMany()
+                        .HasForeignKey("AerolineaLlegada")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Aerolinea", "Aerolinea")
+                        .WithMany()
+                        .HasForeignKey("AerolineaSalida")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.CategoriaPasajeros", "CategoriaPasajeros")
+                        .WithMany()
+                        .HasForeignKey("Categoria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Ciudad", "Ciudad")
+                        .WithMany()
+                        .HasForeignKey("Destino")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Opain.Jarvis.Dominio.Entidades.RutaArchivos", "RutaArchivos")
                         .WithMany()
                         .HasForeignKey("IdCargue")
@@ -1170,6 +1224,22 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
                         .HasForeignKey("IdOperacionVuelo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Opain.Jarvis.Dominio.Entidades.Ciudad", "Ciudad1")
+                        .WithMany()
+                        .HasForeignKey("Origen")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Aerolinea");
+
+                    b.Navigation("Aerolinea1");
+
+                    b.Navigation("CategoriaPasajeros");
+
+                    b.Navigation("Ciudad");
+
+                    b.Navigation("Ciudad1");
 
                     b.Navigation("OperacionesVuelo");
 
@@ -1292,7 +1362,9 @@ namespace Opain.Jarvis.Infraestructura.Datos.Migrations
 
                     b.HasOne("Opain.Jarvis.Dominio.Entidades.Usuario", "Usuario")
                         .WithMany("UsuariosAerolineas")
-                        .HasForeignKey("IdUsuario");
+                        .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Aerolinea");
 

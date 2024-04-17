@@ -11,10 +11,14 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         [MaxLength(3)]
         public string CodigoIATA { get; set; }
-        public bool CobroCausal64VuelosDom { get; set; }
-        [MaxLength(45)]
+        //public bool CobroCausal64VuelosDom { get; set; }
+        [Required]
+        [ForeignKey("Ciudad1")]
         public string Ciudad { get; set; }
-        [MaxLength(45)]
-        public string Pais  { get; set; }
+        public Ciudad Ciudad1 { get; set; } 
+        [Required]
+        [ForeignKey("Pais1")]
+        public string Pais { get; set; }
+        public Pais Pais1 { get; set; }
     }
 }

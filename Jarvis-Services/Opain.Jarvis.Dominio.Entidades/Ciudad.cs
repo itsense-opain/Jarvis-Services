@@ -20,7 +20,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         public Pais Pais { get; set; }
         [Required]
         public bool IdEstado { get; set; }
-        public string Codigo { get; set; }       
+        //public string Codigo { get; set; }       
         //public ICollection<Vuelo> Origenes { get; set; }
 
         //public ICollection<Vuelo> Destinos { get; set; }

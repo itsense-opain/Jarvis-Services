@@ -40,87 +40,23 @@ namespace Opain.Jarvis.Infraestructura.Datos
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<Usuario>(b =>
-            {
-                // Each User can have many UserClaims
-                //b.HasMany(e => e.ClaimUsuario)
-                //    .WithOne(e => e.Usuario)
-                //    .HasForeignKey(uc => uc.UserId)
-                //    .IsRequired();
-
-                // Each User can have many UserLogins
-                //b.HasMany(e => e.LoginUsuario)
-                //    .WithOne(e => e.Usuario)
-                //    .HasForeignKey(ul => ul.UserId)
-                //    .IsRequired();
-
-                // Each User can have many UserTokens
-                //b.HasMany(e => e.TokenUsuario)
-                //    .WithOne(e => e.Usuario)
-                //    .HasForeignKey(ut => ut.UserId)
-                //    .IsRequired();
-
-                // Each User can have many entries in the UserRole join table
-                //b.HasMany(e => e.RolesUsuarios)
-                //    .WithOne(e => e.Usuario)
-                //    .HasForeignKey(ur => ur.UserId)
-                //    .IsRequired();
-
-                //b.ToTable("Usuario");
-
-                //b.Property(e => e.Id).HasMaxLength(150);
-                //b.Property(e => e.EmailConfirmed).HasColumnType("int");
-                //b.Property(e => e.PhoneNumberConfirmed).HasColumnType("int");
-                //b.Property(e => e.TwoFactorEnabled).HasColumnType("int");
-                //b.Property(e => e.LockoutEnabled).HasColumnType("int");
-                //b.Property(e => e.Activo).HasConversion<int>();
-            });
-
             builder.Entity<Rol>(b =>
             {
-                // Each Role can have many entries in the UserRole join table
-                //b.HasMany(e => e.RolesUsuarios)
-                //    .WithOne(e => e.Rol)
-                //    .HasForeignKey(ur => ur.RoleId)
-                //    .IsRequired();
-
-                // Each Role can have many associated RoleClaims
-                //b.HasMany(e => e.ClaimRol)
-                //    .WithOne(e => e.Rol)
-                //    .HasForeignKey(rc => rc.RoleId)
-                //    .IsRequired();
-
                 b.ToTable("Roles");
 
                 b.Property(e => e.Id).HasMaxLength(150);
             });
 
-
-            //builder.Entity<ClaimUsuario>(b =>
-            //{
-            //    b.Property(e => e.Id).HasMaxLength(150);
-            //    b.ToTable("ClaimsUsuario");
-            //});
-
-            //builder.Entity<LoginUsuario>(b =>
-            //{
-            //    b.Property(e => e.ProviderKey).HasMaxLength(150);
-            //    b.Property(e => e.LoginProvider).HasMaxLength(150);
-            //    b.Property(e => e.UserId).HasMaxLength(150);
-            //    b.ToTable("LoginsUsuario");
-            //});
-
-            //builder.Entity<TokenUsuario>(b =>
-            //{
-            //    b.Property(e => e.UserId).HasMaxLength(150);
-            //    b.Property(e => e.LoginProvider).HasMaxLength(150);
-            //    b.Property(e => e.Name).HasMaxLength(150);
-            //    b.ToTable("TokensUsuario");
-            //});
             builder.Entity<RolesUsuarios>(
                 b =>
                 {
                     b.HasKey(e => new { e.IdUsuario, e.IdRol });
+                });
+
+            builder.Entity<UsuariosAerolineas>(
+                b =>
+                {
+                    b.HasKey(e => new { e.IdAerolinea, e.IdUsuario });
                 });
 
             builder.Entity<OperacionesVuelo>(b =>
@@ -162,38 +98,11 @@ namespace Opain.Jarvis.Infraestructura.Datos
                 b.Property(e => e.Fecha).HasColumnType("date");
             });
 
-            //builder.Entity<ClaimRol>(b =>
-            //{
-            //    b.Property(e => e.Id).HasMaxLength(150);
-            //    b.ToTable("ClaimsRoles");
-            //});
-
-            // builder.Entity<Vuelo>()
-            // .HasOne<Ciudad>(sc => sc.Origen)
-            // .WithMany(s => s.Origenes)
-            // .HasForeignKey(sc => sc.IdOrigen);
-
-            // builder.Entity<Vuelo>()
-            //.HasOne<Ciudad>(sc => sc.Destino)
-            //.WithMany(s => s.Destinos)
-            //.HasForeignKey(sc => sc.IdDestino);
-
-            // builder.Entity<Vuelo>(b =>
-            // {
-            //     b.Property(e => e.IdEstado).HasConversion<int>();
-            // });
-
             builder.Entity<Aerolinea>(b =>
             {
                 b.Property(e => e.PDFPasajeros).HasConversion<int>();
                 b.Property(e => e.FechaCreacion).HasDefaultValueSql("GETDATE()");
             });
-
-            //builder.Entity<Ciudad>(b =>
-            //{
-            //    b.Property(e => e.IdEstado).HasConversion<int>();
-            //});
-
         }
         public class YourDbContextFactory : IDesignTimeDbContextFactory<ContextoOpain>
         {

@@ -7,13 +7,13 @@ namespace Opain.Jarvis.Dominio.Entidades
     public class UsuariosAerolineas
     {
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        [Column(Order = 0)]
         [Required]
         [ForeignKey("Aerolinea")]
         public int IdAerolinea { get; set; }
         public Aerolinea Aerolinea { get; set; }
+        [Key]
+        [Column(Order = 1)]
         [ForeignKey("Usuario")]
         public string IdUsuario { get; set; }
         public Usuario Usuario { get; set; }

@@ -23,8 +23,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         [Required]
         public int IdVueloSalida { get; set; }
         [Required]
-        [MaxLength(5)]
+        [ForeignKey("CategoriaPasajeros")]
         public string Categoria { get; set; }
+        public CategoriaPasajeros CategoriaPasajeros { get; set; }
         [Required]
         [DataType(DataType.Date)]
         public DateTime FechaLlegada { get; set; }
@@ -44,20 +45,24 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(15)]
         public string NumeroVueloSalida { get; set; }
         [Required]
-        [MaxLength(5)]
+        [ForeignKey("Ciudad")]
         public string Destino { get; set; }
+        public Ciudad Ciudad { get; set; }
         [Required]
-        [MaxLength(50)]
-        public string AerolineaSalida { get; set; }
+        [ForeignKey("Aerolinea")]
+        public int AerolineaSalida { get; set; }
+        public Aerolinea Aerolinea { get; set; }
         [Required]
         [MaxLength(15)]
         public string NumeroVueloLlegada { get; set; }
         [Required]
-        [MaxLength(5)]
-        public string Origen { get; set; }   
+        [ForeignKey("Ciudad1")]
+        public string Origen { get; set; }
+        public Ciudad Ciudad1 { get; set; }
         [Required]
-        [MaxLength(50)]
-        public string AerolineaLlegada { get; set; }
+        [ForeignKey("Aerolinea1")]
+        public int AerolineaLlegada { get; set; }
+        public Aerolinea Aerolinea1 { get; set; }
         [MaxLength(100)]
         public string Observaciones { get; set; }
         public bool TasaCobrada { get; set; }

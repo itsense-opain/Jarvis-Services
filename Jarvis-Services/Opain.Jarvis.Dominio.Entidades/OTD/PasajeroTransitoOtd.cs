@@ -58,10 +58,10 @@ namespace Opain.Jarvis.Dominio.Entidades
         public bool Firmado { get; set; }
 
         [Display(Name = "Aerolínea de Salida")]
-        public string AerolineaSalida { get; set; }
+        public int AerolineaSalida { get; set; }
                       
         [Display(Name = "Aerolínea de Llegada")]
-        public string AerolineaLlegada { get; set; }
+        public int AerolineaLlegada { get; set; }
 
         public string Tipo { get; set; }
 

@@ -8,14 +8,11 @@ namespace Opain.Jarvis.Dominio.Entidades
     {
         [Key]
         [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-        [Required]
         [MaxLength(5)]
         public string CodPasajero { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Nombre { get; set; }// Preguntar
+        public string Nombre { get; set; }
         [Required]
         [MaxLength(250)]
         public string Descripcion { get; set; }

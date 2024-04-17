@@ -211,7 +211,7 @@ namespace Opain.Jarvis.Dominio.Entidades
         {
             var usuariosAerolineasOtd = new UsuariosAerolineasOtd
             {
-                Id = objEntrada.Id,
+                //Id = objEntrada.Id,
                 IdAerolinea = objEntrada.IdAerolinea,
                 IdUsuario = objEntrada.IdUsuario
             };

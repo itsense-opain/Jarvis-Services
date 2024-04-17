@@ -18,8 +18,9 @@ namespace Opain.Jarvis.Dominio.Entidades
         [MaxLength(250)]
         public string NombrePasajero { get; set; }
         [Required]
-        [MaxLength(5)]
+        [ForeignKey("CategoriaPasajeros")]
         public string IdCategoriaPasajero { get; set; }
+        public CategoriaPasajeros CategoriaPasajeros { get; set; }
         [Required]
         public DateTime FechaVuelo { get; set; }
         [Required]
